@@ -1,0 +1,9 @@
+{
+  "extends": ["standard", "standard-react", "standard-flow"],
+  "env": {
+     "es6": true,
+     "browser": true,
+     "node": true,
+     "jest": true
+   }
+}
