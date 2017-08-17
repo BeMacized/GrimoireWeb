@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+:root body {
+  background-color: #f3f3f3;
+  font-family: 'Abel', sans-serif;
+  color: #555;
+}
+
+:root html, :root body :root #app {
+  height: 100vh;
+}
+
+:root hr {
+  background-color: #ddd;
+}
+
+:root button {
+   background-color: #FFF; 
+   color: #555 !important; 
+   font-family: 'Abel', sans-serif;
+   border-radius: 0%;
+   border: 2px solid transparent;
+   border-image: linear-gradient(to right, #f857a6, #ff5858);
+   border-image-slice: 1;
+}
+
+:root ul {
+  margin: 0;
+}
+
+:root a:link, a:visited, a:active {
+  color: #f857a6;
+  text-decoration: none;
+}
+
+:root a:hover {
+  color: #ff5858;
+  text-decoration: none;
+}
+
+:root code {
+  color: #f857a6;  
+  font-size: 0.75em;
+}
