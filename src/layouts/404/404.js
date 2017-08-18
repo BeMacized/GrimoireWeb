@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import GrimoireLogo from '../../components/GrimoireLogo/GrimoireLogo'
 import { Row, Col } from 'reactstrap'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const H1Gradient = styled.h1`
   background: linear-gradient(90deg, #f857a6, #ff5858);

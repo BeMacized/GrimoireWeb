@@ -1,6 +1,5 @@
 // @Flow
 import React from 'react'
-import { Link } from 'react-router'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -44,7 +43,7 @@ export default class Footer extends React.Component {
           </Disclaimer>
         </TopContent>
         <BottomBar>
-            Original Content © {new Date().getFullYear()} <Link href='https://bemacized.net/'>BeMacized</Link>
+            Original Content © {new Date().getFullYear()} <a href='https://bemacized.net/'>BeMacized</a>
         </BottomBar>
       </Wrapper>
     )

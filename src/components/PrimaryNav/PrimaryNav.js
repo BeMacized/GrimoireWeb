@@ -1,19 +1,33 @@
 // @Flow
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router'
+import { Link, NavLink as RRNavLink } from 'react-router-dom'
 import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap'
 import styled from 'styled-components'
-import classNames from 'classnames'
 import MediaQuery from 'react-responsive'
 import FontAwesome from 'react-fontawesome'
 import GrimoireLogo from '../GrimoireLogo/GrimoireLogo'
-import styles from './style.css'
 import { INVITE_URL } from '../../globals'
 
 const Wrapper = styled.div`
   min-height:80px;
 `
+
+const RContainer = (props) =>
+  <MediaQuery query='(max-width: 576px)'>
+    {(matches) =>
+      <Container style={matches ? {
+        maxWidth: '100% !important',
+        margin: '0 !important'
+      } : {}}>
+        {props.children}
+      </Container>
+    }
+  </MediaQuery>
+
+RContainer.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element)
+}
 
 class PrimaryNav extends React.Component {
   constructor (props) {
@@ -50,15 +64,29 @@ class PrimaryNav extends React.Component {
   }
 
   render () {
+    const navBarStyle = Object.assign({
+      backgroundColor: '#f3f3f3',
+      transition: 'background-color 0.5s ease'
+    }, !this.state.barTranslucent ? {} : {
+      backgroundColor: 'rgba(255, 255, 255, 0.9)'
+    })
+
+    const brandStyle = {
+      background: 'linear-gradient(90deg, #f857a6, #ff5858)',
+      backgroundClip: 'text',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent'
+    }
+
     const navItems = this.props.items.map(item => (
       <NavItem key={item.text}>
         {
           item.external
-            ? <NavLink className={styles.navButton} href={item.link}>
+            ? <NavLink className='navLink' href={item.link}>
               <MediaQuery query='screen and (min-width:768px), screen and (max-width:576px)'>{!item.icon || <FontAwesome name={item.icon} style={{paddingRight: '7px'}} />}</MediaQuery>
               {item.text}
             </NavLink>
-            : <NavLink className={styles.navButton} tag={Link} to={item.link}>
+            : <NavLink className='navLink' tag={RRNavLink} to={item.link}>
               <MediaQuery query='screen and (min-width:768px), screen and (max-width:576px)'>{!item.icon || <FontAwesome name={item.icon} style={{paddingRight: '7px'}} />}</MediaQuery>
               {item.text}
             </NavLink>
@@ -68,23 +96,31 @@ class PrimaryNav extends React.Component {
 
     return (
       <Wrapper>
-        <Navbar className={classNames(styles.bar, this.state.barTranslucent ? styles.barTranslucent : null)} fixed='top' light toggleable>
-          <Container className={styles.container}>
+        <Navbar fixed='top' light toggleable style={navBarStyle}>
+          <RContainer>
             <NavbarToggler right onClick={this.toggle} />
-            <NavbarBrand className={styles.brand}>
-              <Link to='/'>
-                <GrimoireLogo size={42} /> | Grimoire
-              </Link>
+            <NavbarBrand style={brandStyle}>
+              <GrimoireLogo size={42} /> | Grimoire
             </NavbarBrand>
             <MediaQuery query='(min-width:992px)'>
-              <Link href={INVITE_URL}><Button>Add to Discord</Button></Link>
+              <Link to={INVITE_URL}><Button>Add to Discord</Button></Link>
             </MediaQuery>
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>
+                <style jsx global>{`
+                  .navLink {
+                    color: #555 !important;
+                    padding: 10px 15px 10px 15px !important;
+                  }
+                  .navLink:hover {
+                    color: #FFF !important;
+                    background: linear-gradient(90deg, #f857a6, #ff5858);
+                  }
+                `}</style>
                 {navItems}
               </Nav>
             </Collapse>
-          </Container>
+          </RContainer>
         </Navbar>
       </Wrapper>
     )

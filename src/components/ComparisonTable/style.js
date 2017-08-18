@@ -1,3 +1,4 @@
+export default `
 .table td:first-child {
     text-align: left;    
 }
@@ -61,3 +62,4 @@
     width: 100%;
     border:none;
 }
+`

@@ -1,11 +1,11 @@
 // @Flow
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import { Table, UncontrolledTooltip, Button } from 'reactstrap'
 import FontAwesome from 'react-fontawesome'
 // import PropTypes from 'prop-types'
-import styles from './style.css'
 import { INVITE_URL } from '../../globals'
+import styles from './style.js'
 
 const SupportedIcon = () => (<FontAwesome name='check' />)
 const NotSupportedIcon = () => (<FontAwesome style={{color: '#ccc'}} name='times' />)
@@ -14,7 +14,8 @@ class ComparisonTable extends React.Component {
   render () {
     return (
       <div>
-        <Table size='sm' striped responsive className={styles.table}>
+        <style jsx global>{styles}</style>
+        <Table size='sm' striped responsive className='table'>
           <thead>
             <tr>
               <td />
@@ -41,7 +42,7 @@ class ComparisonTable extends React.Component {
             </tr>
           </thead>
           <tbody>
-            <tr className={styles.categoryRow}>
+            <tr className='categoryRow'>
               <td>Basic Functionality</td>
               <td />
               <td />
@@ -117,7 +118,7 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
-            <tr className={styles.categoryRow}>
+            <tr className='categoryRow'>
               <td>Card Pricing <Link to='/reference/pricing'><FontAwesome name='book' /></Link></td>
               <td />
               <td />
@@ -148,7 +149,7 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
-            <tr className={styles.categoryRow}>
+            <tr className='categoryRow'>
               <td>Rulings</td>
               <td />
               <td />
@@ -187,7 +188,7 @@ class ComparisonTable extends React.Component {
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
-            <tr className={styles.categoryRow}>
+            <tr className='categoryRow'>
               <td>Miscellaneous Features</td>
               <td />
               <td />
@@ -240,10 +241,10 @@ class ComparisonTable extends React.Component {
           <tfoot>
             <tr>
               <td />
-              <td><Link href={INVITE_URL}><Button>Add to Discord</Button></Link></td>
-              <td><Link href='https://scryfall.com/bots'><Button>Visit Site</Button></Link></td>
-              <td><Link href='https://github.com/bra1n/judgebot'><Button>Visit Site</Button></Link></td>
-              <td><Link href='https://github.com/MagicTheGathering/mtg-discord-bot'><Button>Visit Site</Button></Link></td>
+              <td><a href={INVITE_URL}><Button>Add to Discord</Button></a></td>
+              <td><a href='https://scryfall.com/bots'><Button>Visit Site</Button></a></td>
+              <td><a href='https://github.com/bra1n/judgebot'><Button>Visit Site</Button></a></td>
+              <td><a href='https://github.com/MagicTheGathering/mtg-discord-bot'><Button>Visit Site</Button></a></td>
             </tr>
           </tfoot>
         </Table>

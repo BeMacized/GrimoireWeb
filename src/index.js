@@ -1,14 +1,20 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Router, browserHistory as history } from 'react-router'
-import { AppContainer } from 'react-hot-loader'
-import routes from './routes'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'font-awesome/css/font-awesome.css'
+import app from './server'
+import http from 'http'
 
-render(
-  <AppContainer>
-    <Router history={history} routes={routes} />
-  </AppContainer>,
-  document.getElementById('app')
-)
+const server = http.createServer(app)
+
+let currentApp = app
+
+server.listen(process.env.PORT || 3000)
+
+if (module.hot) {
+  console.log('✅  Server-side HMR Enabled!')
+
+  module.hot.accept('./server', () => {
+    console.log('🔁  HMR Reloading `./server`...')
+    server.removeListener('request', currentApp)
+    const newApp = require('./server').default
+    server.on('request', newApp)
+    currentApp = newApp
+  })
+}

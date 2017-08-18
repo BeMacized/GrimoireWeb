@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import { Container } from 'reactstrap'
 import PrimaryNav from '../PrimaryNav/PrimaryNav'
 import Footer from '../Footer/Footer'
-import './style.global.css'
+import Favicon from 'react-favicon'
 import { SUPPORT_INVITE_URL } from '../../globals'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.css'
+import './style.global.css'
 
 const Wrapper = styled.div`
   min-height:100%;
@@ -21,6 +24,7 @@ class App extends React.Component {
   render () {
     return (
       <Wrapper>
+        <Favicon url={require('../../img/favicon.ico')} />
         <PrimaryNav items={[
           { text: 'Overview', link: '/', icon: 'rocket' },
           { text: 'Command Reference', link: '/reference', icon: 'book' },

@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Row, Col, Button } from 'reactstrap'
 import TypeOut from 'react-typeout'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import ComparisonTable from '../../components/ComparisonTable/ComparisonTable'
 import GrimoireLogo from '../../components/GrimoireLogo/GrimoireLogo'
 import { INVITE_URL } from '../../globals'
@@ -96,7 +96,7 @@ class Overview extends React.Component {
               ]} />
             </H1Gradient>
             <HButtonWrapper>
-              <Link href={INVITE_URL}><Button>Add to Discord</Button></Link>
+              <a href={INVITE_URL}><Button>Add to Discord</Button></a>
             </HButtonWrapper>
           </Col>
           <Col xl={6} lg={6} className={'hidden-md-down'}>

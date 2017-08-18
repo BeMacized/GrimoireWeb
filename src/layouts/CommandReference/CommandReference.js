@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 // import styled from 'styled-components'
 import shortid from 'shortid'
 import { Row, Col, Table, Card } from 'reactstrap'
-import style from './style.css'
 
 class Shortcut extends React.Component {
   render () {
@@ -35,7 +34,11 @@ Shortcut.propTypes = {
 class Command extends React.Component {
   render () {
     return (
-      <tr className={this.props.active ? style.activeRow : ''} ref={this.props.cmdRef}>
+      <tr className={this.props.active ? {
+        color: '#FFF',
+        background: 'linear-gradient(90deg, #f857a6, #ff5858)',
+        fontWeight: 'bold'
+      } : {}} ref={this.props.cmdRef}>
         <td>
           {this.props.command.command.map(ss => (<span key={shortid()}><code>!{ss}</code><br /></span>))}
         </td>
