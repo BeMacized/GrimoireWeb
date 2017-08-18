@@ -1,4 +1,4 @@
-// @Flow
+// @flow
 import React from 'react'
 import styled from 'styled-components'
 import { Row, Col, Button } from 'reactstrap'
