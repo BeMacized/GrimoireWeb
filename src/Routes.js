@@ -9,7 +9,7 @@ import CommandReference from './layouts/CommandReference/CommandReference'
 import About from './layouts/About/About'
 import NotFoundPage from './layouts/404/404'
 
-const Routes = () =>
+export default () =>
   <App>
     <Switch>
       <Route exact path='/' component={Overview} />
@@ -18,5 +18,3 @@ const Routes = () =>
       <Route path='*' component={NotFoundPage} />
     </Switch>
   </App>
-
-export default Routes
