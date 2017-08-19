@@ -31,30 +31,25 @@ Shortcut.propTypes = {
   }).isRequired
 }
 
-class Command extends React.Component {
-  render () {
-    return (
-      <tr className={this.props.active ? {
-        color: '#FFF',
-        background: 'linear-gradient(90deg, #f857a6, #ff5858)',
-        fontWeight: 'bold'
-      } : {}} ref={this.props.cmdRef}>
-        <td>
-          {this.props.command.command.map(ss => (<span key={shortid()}><code>!{ss}</code><br /></span>))}
-        </td>
-        <td>
-          {this.props.command.description}
-        </td>
-        <td>
-          {this.props.command.aliases.map(ss => (<span key={shortid()}><code>{ss}</code> </span>))}
-        </td>
-        <td>
-          {this.props.command.examples.map(ss => (<span key={shortid()}><code>!{(this.props.command.command[0].split(/\s+/)[0]+ ' ' + ss).trim()}</code><br /></span>))}
-        </td>
-      </tr>
-    )
-  }
-}
+const Command = (props) =>
+  <tr style={props.active ? {
+    color: '#FFF',
+    background: 'linear-gradient(90deg, #f857a6, #ff5858)',
+    fontWeight: 'bold'
+  } : {}} ref={props.cmdRef}>
+    <td>
+      {props.command.command.map(ss => (<span key={shortid()}><code>!{ss}</code><br /></span>))}
+    </td>
+    <td>
+      {props.command.description}
+    </td>
+    <td>
+      {props.command.aliases.map(ss => (<span key={shortid()}><code>{ss}</code> </span>))}
+    </td>
+    <td>
+      {props.command.examples.map(ss => (<span key={shortid()}><code>!{(props.command.command[0].split(/\s+/)[0]+ ' ' + ss).trim()}</code><br /></span>))}
+    </td>
+  </tr>
 
 Command.propTypes = {
   command: PropTypes.shape({
@@ -71,13 +66,12 @@ class CommandReference extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      activeCommand: (this.props.params) ? this.props.params.command || '' : ''
+      activeCommand: (this.props.match.params) ? this.props.match.params.command || '' : ''
     }
   }
 
   componentDidMount () {
-    console.log(this.activeCommandRef)
-    setTimeout(() => this.activeCommandRef.scrollIntoViewIfNeeded(), 500)
+    setTimeout(() => { if (this.activeCommandRef) this.activeCommandRef.scrollIntoViewIfNeeded() }, 500)
   }
 
   render () {
@@ -137,8 +131,10 @@ class CommandReference extends React.Component {
 }
 
 CommandReference.propTypes = {
-  params: PropTypes.shape({
-    command: PropTypes.string
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      command: PropTypes.string
+    })
   })
 }
 
