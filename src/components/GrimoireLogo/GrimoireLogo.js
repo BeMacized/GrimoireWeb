@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 class GrimoireLogo extends React.Component {
   render () {
     return (
-      <img src={require('../../img/logos/GrimoireLogo.png')} alt='Icon' style={Object.assign({
+      <img src='/img/logos/GrimoireLogo.png' alt='Icon' style={Object.assign({
         width: (this.props.size || 48) + 'px',
         height: (this.props.size || 48) + 'px',
         borderRadius: '100%'

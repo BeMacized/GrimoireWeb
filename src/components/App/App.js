@@ -24,7 +24,7 @@ class App extends React.Component {
   render () {
     return (
       <Wrapper>
-        <Favicon url={require('../../img/favicon.ico')} />
+        <Favicon url='/img/favicon.ico' />
         <PrimaryNav items={[
           { text: 'Overview', link: '/', icon: 'rocket' },
           { text: 'Command Reference', link: '/reference', icon: 'book' },

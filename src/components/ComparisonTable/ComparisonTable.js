@@ -20,22 +20,22 @@ class ComparisonTable extends React.Component {
             <tr>
               <td />
               <td>
-                <img src={require('../../img/logos/GrimoireLogo.png')} alt='Icon' />
+                <img src='/img/logos/GrimoireLogo.png' alt='Icon' />
                 <br />
               Grimoire
               </td>
               <td>
-                <img src={require('../../img/logos/ScryfallLogo.png')} alt='Icon' />
+                <img src='/img/logos/ScryfallLogo.png' alt='Icon' />
                 <br />
               Scryfall Bot
               </td>
               <td>
-                <img src={require('../../img/logos/JudgebotLogo.png')} alt='Icon' />
+                <img src='/img/logos/JudgebotLogo.png' alt='Icon' />
                 <br />
               JudgeBot
               </td>
               <td>
-                <img src={require('../../img/logos/MtgioLogo.png')} alt='Icon' />
+                <img src='/img/logos/MtgioLogo.png' alt='Icon' />
                 <br />
               MagicTheGathering.io Bot
               </td>

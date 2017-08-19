@@ -121,7 +121,7 @@ class Overview extends React.Component {
         <Row style={{paddingTop: '30px'}}>
           <Col lg='4' md={12} sm={12} xs={12}>
             <ImageWrapperWhite>
-              <img src={require('../../img/screenshots/CardLookup.png')} alt='Card Lookup' />
+              <img src='/img/screenshots/CardLookup.png' alt='Card Lookup' />
             </ImageWrapperWhite>
           </Col>
           <Col lg='8' md={12} sm={12} xs={12}>
@@ -142,7 +142,7 @@ class Overview extends React.Component {
         <Row style={{paddingTop: '30px'}}>
           <Col lg={4} md={12} sm={12} xs={12} className='push-lg-8'>
             <ImageWrapperGrey>
-              <img src={require('../../img/screenshots/Pricing.png')} alt='Pricing' />
+              <img src='/img/screenshots/Pricing.png' alt='Pricing' />
             </ImageWrapperGrey>
           </Col>
           <Col lg={8} md={12} sm={12} xs={12} className='pull-lg-4'>
@@ -162,7 +162,7 @@ class Overview extends React.Component {
         <Row style={{paddingTop: '30px'}}>
           <Col lg={4} md={12} sm={12} xs={12}>
             <ImageWrapperWhite>
-              <img src={require('../../img/screenshots/RuleLookup.png')} alt='Rule Lookup' />
+              <img src='/img/screenshots/RuleLookup.png' alt='Rule Lookup' />
             </ImageWrapperWhite>
           </Col>
           <Col lg={8} md={12} sm={12} xs={12}>
@@ -182,7 +182,7 @@ class Overview extends React.Component {
         <Row style={{paddingTop: '30px'}}>
           <Col md={4} sm={12} xs={12} className='push-lg-8'>
             <ImageWrapperGrey>
-              <img src={require('../../img/screenshots/NonEnglish.png')} alt='Non English' />
+              <img src='/img/screenshots/NonEnglish.png' alt='Non English' />
             </ImageWrapperGrey>
           </Col>
           <Col md={8} sm={12} xs={12} className='pull-lg-4'>
@@ -201,7 +201,7 @@ class Overview extends React.Component {
         <Row style={{paddingTop: '30px'}}>
           <Col md={4} sm={12} xs={12}>
             <ImageWrapperWhite>
-              <img src={require('../../img/screenshots/Tokens.png')} alt='Tokens' />
+              <img src='/img/screenshots/Tokens.png' alt='Tokens' />
             </ImageWrapperWhite>
             <H3Gradient>Find any token!</H3Gradient>
             <TextBlock>
@@ -211,7 +211,7 @@ class Overview extends React.Component {
           </Col>
           <Col md={4} sm={12} xs={12}>
             <ImageWrapperGrey>
-              <img src={require('../../img/screenshots/Random.png')} alt='Random Cards' />
+              <img src='/img/screenshots/Random.png' alt='Random Cards' />
             </ImageWrapperGrey>
             <H3Gradient>Random Cards</H3Gradient>
             <TextBlock>
@@ -224,7 +224,7 @@ class Overview extends React.Component {
           </Col>
           <Col md={4} sm={12} xs={12}>
             <ImageWrapperWhite>
-              <img src={require('../../img/screenshots/Standard.png')} alt="What's In Standard" />
+              <img src='/img/screenshots/Standard.png' alt="What's In Standard" />
             </ImageWrapperWhite>
             <H3Gradient>What's In Standard?</H3Gradient>
             <TextBlock>

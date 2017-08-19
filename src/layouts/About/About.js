@@ -100,7 +100,7 @@ class About extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Person icon={require('../../img/avatars/BeMacized.png')} name='BeMacized' role='Main Developer' url='https://bemacized.net/' />
+                  <Person icon='/img/avatars/BeMacized.png' name='BeMacized' role='Main Developer' url='https://bemacized.net/' />
                 </Row>
               </CardBlock>
             </Card>
@@ -114,8 +114,8 @@ class About extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Person icon={require('../../img/avatars/LightRod.png')} name='LightRod' role='MTG Expert' columns='6' />
-                  <Person icon={require('../../img/avatars/MagicAndChill.png')} name='Magic & Chill' role='Supporting Community' columns='6' url='https://discord.gg/vqsFzgJ' />
+                  <Person icon='/img/avatars/LightRod.png' name='LightRod' role='MTG Expert' columns='6' />
+                  <Person icon='/img/avatars/MagicAndChill.png' name='Magic & Chill' role='Supporting Community' columns='6' url='https://discord.gg/vqsFzgJ' />
                 </Row>
               </CardBlock>
             </Card>
