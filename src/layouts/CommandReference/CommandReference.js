@@ -355,7 +355,7 @@ const commands = [
     ],
     'examples': ['', 'legendary creature', 'C17 mythic', 'rare artifact'],
     'description': 'Show a random card of a certain type. Example: `!random legendary creature angel`.',
-    'command': ['random <[supertype] [type] [subtype] [rarity] [set] [setcode]>...']
+    'command': ['random <[supertype] [type] [subtype] [rarity] [set] [setcode] [layout]>...']
   },
   {
     'aliases': [
