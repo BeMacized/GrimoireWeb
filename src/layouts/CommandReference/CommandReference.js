@@ -144,25 +144,29 @@ const shortcuts = [
   {
     shortcuts: [
       '<<card>>',
-      '<<card | set>>'
+      '<<card | set>>',
+      '[[card]]',
+      '[[<card | set]]'
     ],
     command: 'card',
     examples: [
       '<<Mighty Leap>>',
       '<<Mighty Leap | ORI>>',
-      '<<Mighty Leap | Magic Origins>>'
+      '[[Mighty Leap | Magic Origins]]'
     ]
   },
   {
     shortcuts: [
       '<<$card>>',
-      '<<$card | set>>'
+      '<<$card | set>>',
+      '[[$card]]',
+      '[[$card | set]]'
     ],
     command: 'pricing',
     examples: [
       '<<$Mighty Leap>>',
       '<<$Mighty Leap | ORI>>',
-      '<<$Mighty Leap | Magic Origins>>'
+      '[[$Mighty Leap | Magic Origins]]'
     ]
   }
 ].sort((a, b) => (a.command > b.command) ? 1 : ((b.command > a.command) ? -1 : 0))
