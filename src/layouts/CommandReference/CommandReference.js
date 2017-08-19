@@ -82,7 +82,7 @@ class CommandReference extends React.Component {
             <h1>Command Reference</h1>
             <hr />
             <h3>Inline Shortcuts</h3>
-            <p>You can use inline shortcuts to quickly reference multiple cards within your message. You are limited to a max of 5 inline references per message.</p>
+            <p>You can use inline shortcuts to quickly reference multiple cards within your message. You are limited to a max of 3 inline references per message.</p>
             <Card>
               <Table size='sm' striped style={{tableLayout: 'fixed'}}>
                 <thead>
