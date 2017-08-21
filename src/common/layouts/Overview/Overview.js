@@ -200,6 +200,26 @@ class Overview extends React.Component {
           </Row>
 
           <Row style={{paddingTop: '30px'}}>
+            <Col lg={4} md={12} sm={12} xs={12}>
+              <ImageWrapperWhite style={{background: "url('/img/screenshots/Dashboard.png')", backgroundSize: 'cover', backgroundPosition: 'center center'}} />
+            </Col>
+            <Col lg={8} md={12} sm={12} xs={12}>
+              <H3Gradient>Fully Configurable</H3Gradient>
+              <TextBlock>
+                Grimoire can be fully configured via the <Link to='/dashboard'>Dashboard</Link>.<br />
+                Here you can configure many options for your Discord server, including, but not limited to:<br />
+                <ul>
+                  <li>The card properties to show</li>
+                  <li>The command prefix to respond to </li>
+                  <li>What pricing providers to show</li>
+                  <li>The services to link to</li>
+                  <li>And more...</li>
+                </ul>
+              </TextBlock>
+            </Col>
+          </Row>
+
+          <Row style={{paddingTop: '30px'}}>
             <Col md={4} sm={12} xs={12}>
               <ImageWrapperWhite>
                 <img src='/img/screenshots/Tokens.png' alt='Tokens' />

@@ -160,12 +160,6 @@ class PreferencePane extends React.Component {
           transitionLeaveTimeout={300}>
           {!this.state.loaded
             ? <LoadWrapper>
-              <style jsx global>{`
-              div[role^='progressbar'] {
-                color: #f857a6 !important;
-                margin-bottom: 40px;
-              }
-            `}</style>
               <CircularProgress color='primary' size={64} />
             </LoadWrapper>
             : ''}
@@ -311,14 +305,6 @@ class Preference extends React.Component {
         <ListItem button onClick={() => onModify(value === 1 ? 0 : 1)}>
           <ListItemText primary={preference.name} secondary={preference.description} />
           <ListItemSecondaryAction>
-            <style jsx global>{`
-              div[class^=MuiSwitch-icon] {
-                color: #f857a6;
-              }
-              div[class^=MuiSwitch-bar] {
-                background-color: #ff5858 !important;
-              }
-            `}</style>
             <Switch onClick={() => onModify(value === 1 ? 0 : 1)} checked={value === 1} />
           </ListItemSecondaryAction>
         </ListItem>

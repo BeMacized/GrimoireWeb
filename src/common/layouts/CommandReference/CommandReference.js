@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import styled from 'styled-components'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import shortid from 'shortid'
 import { Row, Col, Table, Card } from 'reactstrap'
 

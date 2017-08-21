@@ -189,6 +189,27 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr className='categoryRow'>
+              <td>Configuration</td>
+              <td />
+              <td />
+              <td />
+              <td />
+            </tr>
+            <tr>
+              <td>Configurable</td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
+              <td>Web Dashboard</td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr className='categoryRow'>
               <td>Miscellaneous Features</td>
               <td />
               <td />
