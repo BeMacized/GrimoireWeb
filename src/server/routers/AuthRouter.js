@@ -9,9 +9,9 @@ passport.deserializeUser((user, done) => done(null, user))
 
 passport.use(new DiscordStrategy(
   {
-    clientID: process.env.DISCORD_CLIENT_ID,
-    clientSecret: process.env.DISCORD_CLIENT_SECRET,
-    callbackURL: process.env.DISCORD_CALLBACK_URL || 'http://127.0.0.1:3000/auth/discord/callback',
+    clientID: process.env.RAZZLE_DISCORD_CLIENT_ID,
+    clientSecret: process.env.RAZZLE_DISCORD_CLIENT_SECRET,
+    callbackURL: process.env.RAZZLE_DISCORD_CALLBACK_URL || 'http://127.0.0.1:3000/auth/discord/callback',
     scope: ['identify', 'guilds']
   },
   (accessToken, refreshToken, profile, done) => done(null, profile)
