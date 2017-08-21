@@ -2,6 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import ReactCSSTransitionReplace from 'react-css-transition-replace'
 import { Container } from 'reactstrap'
 import PrimaryNav from '../PrimaryNav/PrimaryNav'
 import Footer from '../Footer/Footer'
@@ -9,6 +10,7 @@ import Favicon from 'react-favicon'
 import { SUPPORT_INVITE_URL } from '../../globals'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'font-awesome/css/font-awesome.css'
+import 'animate.css/animate.css'
 import './style.global.css'
 
 const Wrapper = styled.div`
@@ -29,13 +31,17 @@ class App extends React.Component {
           { text: 'Overview', link: '/', icon: 'rocket' },
           { text: 'Command Reference', link: '/reference', icon: 'book' },
           { text: 'About & FAQ', link: '/about', icon: 'question-circle-o' },
-          { text: 'Support Server', link: SUPPORT_INVITE_URL, 'external': true, icon: 'comments' }
-          // { text: 'Dashboard', link: '/dashboard', icon: 'gear' }
+          { text: 'Support Server', link: SUPPORT_INVITE_URL, icon: 'comments', external: true },
+          { text: 'Dashboard', link: '/dashboard', icon: 'gear' }
         ]} />
         <Content>
           <Container>
             <hr />
-            {this.props.children}
+            <ReactCSSTransitionReplace transitionName='ani-fadeup'
+              transitionEnterTimeout={300}
+              transitionLeaveTimeout={300}>
+              {this.props.children}
+            </ReactCSSTransitionReplace>
           </Container>
         </Content>
         <Footer />
@@ -45,7 +51,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.element
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.element), PropTypes.element])
 }
 
 export default App

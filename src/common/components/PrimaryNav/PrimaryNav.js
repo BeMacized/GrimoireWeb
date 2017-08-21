@@ -11,6 +11,7 @@ import { INVITE_URL } from '../../globals'
 
 const Wrapper = styled.div`
   min-height:80px;
+  z-index: 100;
 `
 
 const RContainer = (props) =>
@@ -95,12 +96,14 @@ class PrimaryNav extends React.Component {
     ))
 
     return (
-      <Wrapper>
+      <Wrapper className='animated fadeInDown'>
         <Navbar fixed='top' light toggleable style={navBarStyle}>
           <RContainer>
             <NavbarToggler right onClick={this.toggle} />
             <NavbarBrand style={brandStyle}>
-              <GrimoireLogo size={42} /> | Grimoire
+              <GrimoireLogo size={42} style={{
+                boxShadow: '0px 0px 5px 0px #f857a6'
+              }} /> | Grimoire
             </NavbarBrand>
             <MediaQuery query='(min-width:992px)'>
               <Link to={INVITE_URL}><Button>Add to Discord</Button></Link>

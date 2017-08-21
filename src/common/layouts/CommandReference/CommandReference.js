@@ -2,6 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import styled from 'styled-components'
+import { Link } from 'react-router'
 import shortid from 'shortid'
 import { Row, Col, Table, Card } from 'reactstrap'
 
@@ -13,7 +14,7 @@ class Shortcut extends React.Component {
           {this.props.shortcut.shortcuts.map(ss => (<span key={shortid()}><code>{ss}</code><br /></span>))}
         </td>
         <td>
-          <code>!{this.props.shortcut.command}</code>
+          <code>g!{this.props.shortcut.command}</code>
         </td>
         <td>
           {this.props.shortcut.examples.map(ss => (<span key={shortid()}><code>{ss}</code><br /></span>))}
@@ -38,7 +39,7 @@ const Command = (props) =>
     fontWeight: 'bold'
   } : {}} ref={props.cmdRef}>
     <td>
-      {props.command.command.map(ss => (<span key={shortid()}><code>!{ss}</code><br /></span>))}
+      {props.command.command.map(ss => (<span key={shortid()}><code>g!{ss}</code><br /></span>))}
     </td>
     <td>
       {props.command.description}
@@ -47,7 +48,7 @@ const Command = (props) =>
       {props.command.aliases.map(ss => (<span key={shortid()}><code>{ss}</code> </span>))}
     </td>
     <td>
-      {props.command.examples.map(ss => (<span key={shortid()}><code>!{(props.command.command[0].split(/\s+/)[0]+ ' ' + ss).trim()}</code><br /></span>))}
+      {props.command.examples.map(ss => (<span key={shortid()}><code>g!{(props.command.command[0].split(/\s+/)[0]+ ' ' + ss).trim()}</code><br /></span>))}
     </td>
   </tr>
 
@@ -84,7 +85,7 @@ class CommandReference extends React.Component {
             <h3>Inline Shortcuts</h3>
             <p>You can use inline shortcuts to quickly reference multiple cards within your message. You are limited to a max of 3 inline references per message.</p>
             <Card>
-              <Table size='sm' striped style={{tableLayout: 'fixed'}}>
+              <Table size='sm' responsive striped style={{tableLayout: 'fixed'}}>
                 <thead>
                   <tr>
                     <th style={{width: '33%'}}>Shortcut</th>
@@ -103,10 +104,10 @@ class CommandReference extends React.Component {
         <Row>
           <Col md={12}>
             <h3>Commands</h3>
-            <p>All commands are prefixed using <code>!</code> by default. In the future you will be able to change this behaviour.</p>
+            <p>All commands are prefixed using <code>g!</code> by default. You can change this behaviour via the <Link to='/dashboard'>Dashboard</Link>.</p>
 
             <Card>
-              <Table size='sm' striped style={{tableLayout: 'fixed'}}>
+              <Table size='sm' striped responsive style={{tableLayout: 'fixed'}}>
                 <thead>
                   <tr>
                     <th style={{width: '25%'}}>Command</th>

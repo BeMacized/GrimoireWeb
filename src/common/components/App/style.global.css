@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Abel', sans-serif;
+  color: #555;
+}
+
+html, body #app {
+  height: 100vh;
+}
+
+hr {
+  background-color: #ddd;
+}
+
+.btn {
+   background-color: #FFF; 
+   color: #555; 
+   font-family: 'Abel', sans-serif;
+   border-radius: 0%;
+   border: 2px solid transparent;
+   border-image: linear-gradient(to right, #f857a6, #ff5858);
+   border-image-slice: 1;
+}
+
+ul {
+  margin: 0;
+}
+
+a:link, a:visited, a:active {
+  color: #f857a6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff5858;
+  text-decoration: none;
+}
+
+code {
+  color: #f857a6;  
+  font-size: 0.75em;
+}
+
+.ani-fadeup-enter {
+  opacity: 0.01;
+  transform: translate(0px, 100px);
+}
+
+.ani-fadeup-enter-active {
+  opacity: 1;
+  transform: translate(0px, 0px);  
+
+  transition: transform 300ms, opacity 300ms;
+}
+
+.ani-fadeup-leave {
+  opacity: 1;
+  transform: translate(0px, 0px);    
+}
+
+.ani-fadeup-leave-active {
+  opacity: 0.01;
+  transform: translate(0px, 100px);
+
+  transition: transform 300ms, opacity 300ms;
+}
+
+.ani-zoomfade-enter {
+  opacity: 0.01;
+  transform: scale(0,0);
+}
+
+.ani-zoomfade-enter-active {
+  opacity: 1;
+  transform: scale(1,1); 
+
+  transition: transform 500ms, opacity 500ms;
+}
+
+.ani-zoomfade-leave {
+  opacity: 1;
+  transform: scale(1,1);   
+}
+
+.ani-zoomfade-leave-active {
+  opacity: 0.01;
+  transform: scale(0,0);
+
+  transition: transform 500ms, opacity 500ms;
+}
+
+.ani-fade-enter {
+  opacity: 0.01;
+}
+
+.ani-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.ani-fade-leave {
+  opacity: 1;
+}
+
+.ani-fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms;
+}
+
+.ani-fadegrow-enter {
+  opacity: 0.01;
+  transform: scale(1,0);
+}
+
+.ani-fadegrow-enter-active {
+  opacity: 1;
+  transform: scale(1,1);
+  transition: transform 300ms, opacity 300ms ease 300ms;
+}
+
+.ani-fadegrow-leave {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+.ani-fadegrow-leave-active {
+  opacity: 0.01;
+  transform: scale(1,0);
+  transition: opacity 300ms, transform 300ms ease 300ms;
+}

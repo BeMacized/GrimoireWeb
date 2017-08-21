@@ -134,17 +134,16 @@ class About extends React.Component {
               <CardBlock>
                 <CardTitle><FontAwesome name='code' /> Development</CardTitle>
                 <CardText>
-                  <p>
                 Development contributions are very much appreciated. If you think you have a cool feature you can add to Grimoire, or have a bugfix you would like to submit, feel free to submit a pull request at one of the git repositories below:
-                  </p>
-                  <ul>
-                    <li><a href={GITHUB_MAIN_REPO}>Grimoire Main Repository</a></li>
-                    <li><a href={GITHUB_WEB_REPO}>Grimoire Website & Dashboard</a></li>
-                    <li><a href='https://github.com/BeMacized/MTG-Marketplace-Set-Dictionary'>MTG Marketplace Set Dictionary</a></li>
-                  </ul>
-                  <p>
+                </CardText>
+                <ul>
+                  <li><a href={GITHUB_MAIN_REPO}>Grimoire Main Repository</a></li>
+                  <li><a href={GITHUB_WEB_REPO}>Grimoire Website & Dashboard</a></li>
+                  <li><a href='https://github.com/BeMacized/MTG-Marketplace-Set-Dictionary'>MTG Marketplace Set Dictionary</a></li>
+                  <br />
+                </ul>
+                <CardText>
                     For any questions regarding what technologies are used, please read the FAQ below.
-                  </p>
                 </CardText>
               </CardBlock>
             </Card>
@@ -154,19 +153,18 @@ class About extends React.Component {
               <CardBlock>
                 <CardTitle><FontAwesome name='heart' /> Donate</CardTitle>
                 <CardText>
-                  <p>
                     Any donations for this project are spent on funding the monthly recurring server costs first, with development coffee coming in second. <br />
                     If you would like to support this project via a donation, I accept donations via <a href='https://paypal.me/BeMacized'>PayPal</a>.<br />
-                    In case cryptocurrency is your preferred flavour, that's possible too!
-                  </p>
-                  <ul>
-                    <li>Bitcoin (BTC): <code>16WKroiHKRR97x4vX7TAezvzZeisvQ21Fj</code></li>
-                    <li>Ethereum (ETH): <code>0xb5ffd8b77df0431e7b03533cefd411c08a70a1e3</code></li>
-                    <li>Litecoin (LTC): <code>Lf3TX1R5U7XTv5ERPypm5HcK4m3V2BLFfh</code></li>
-                  </ul>
-                  <p>
-                    The monthly running cost of Grimoire is €7.26, which is currently paid out of my own pocket. If you are hoster who is willing to help out on the hosting side of things, any help is greatly appreciated.
-                  </p>
+                    In case cryptocurrency is your preferred flavour, that's fine too:
+                </CardText>
+                <ul>
+                  <li>Bitcoin (BTC): <code>16WKroiHKRR97x4vX7TAezvzZeisvQ21Fj</code></li>
+                  <li>Ethereum (ETH): <code>0xb5ffd8b77df0431e7b03533cefd411c08a70a1e3</code></li>
+                  <li>Litecoin (LTC): <code>Lf3TX1R5U7XTv5ERPypm5HcK4m3V2BLFfh</code></li>
+                  <br />
+                </ul>
+                <CardText>
+                  The monthly running cost of Grimoire is €7.26, which is currently paid out of my own pocket. If you are hoster who is willing to help out on the hosting side of things, any help is greatly appreciated.
                 </CardText>
               </CardBlock>
             </Card>

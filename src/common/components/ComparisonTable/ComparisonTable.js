@@ -13,7 +13,7 @@ const NotSupportedIcon = () => (<FontAwesome style={{color: '#ccc'}} name='times
 class ComparisonTable extends React.Component {
   render () {
     return (
-      <div>
+      <div className='comparisonTable'>
         <style jsx global>{styles}</style>
         <Table size='sm' striped responsive className='table'>
           <thead>
