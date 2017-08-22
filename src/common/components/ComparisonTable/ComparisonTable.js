@@ -101,7 +101,7 @@ class ComparisonTable extends React.Component {
               <td>Card Symbols</td>
               <td><SupportedIcon /></td>
               <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
