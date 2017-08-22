@@ -50,13 +50,14 @@ class Dashboard extends React.Component {
         </Row>
         <Row>
           <Col lg={12}>
-            <h2 style={{ textAlign: 'center', color: '#F00' }}>Dashboard settings do not affect the bot just yet.</h2>
-            <hr />
+            <GuildView guilds={this.props.user.guilds} />
           </Col>
         </Row>
         <Row>
           <Col lg={12}>
-            <GuildView guilds={this.props.user.guilds} />
+            <p style={{textAlign: 'center', paddingTop: '15px'}}>
+              Changes may take up to 5 minutes to apply. In order to apply them immediately, use the <code>g!reloadpreferences</code> command in your guild.
+            </p>
           </Col>
         </Row>
       </div>

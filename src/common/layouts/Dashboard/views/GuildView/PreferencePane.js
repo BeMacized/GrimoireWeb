@@ -227,6 +227,7 @@ class PreferencePane extends React.Component {
               <Preference id={13} value={this.state.preferences[13]} onModify={v => this.setPreference(13, v)} />
             </List>
             <List subheader={<ListSubheader>Card Properties</ListSubheader>}>
+              <Preference id={16} value={this.state.preferences[16]} onModify={v => this.setPreference(16, v)} />
               <Preference id={3} value={this.state.preferences[3]} onModify={v => this.setPreference(3, v)} />
               <Preference id={4} value={this.state.preferences[4]} onModify={v => this.setPreference(4, v)} />
               <Preference id={5} value={this.state.preferences[5]} onModify={v => this.setPreference(5, v)} />
@@ -391,7 +392,7 @@ const preferenceTemplate = [
   {
     'type': 'SWITCH',
     'id': 6,
-    'name': 'Show Converted Cost',
+    'name': 'Show Converted Mana Cost',
     'default': 1
   },
   {
@@ -465,6 +466,12 @@ const preferenceTemplate = [
       ['Force JPY (¥) (Convert)', 'JPY'],
       ['Force GBP (£) (Convert)', 'GBP']
     ]
+  },
+  {
+    'type': 'SWITCH',
+    'id': 16,
+    'name': 'Show Flavor Text',
+    'default': 0
   }
 ]
 

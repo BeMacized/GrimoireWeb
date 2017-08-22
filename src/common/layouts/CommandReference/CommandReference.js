@@ -219,6 +219,19 @@ const commands = [
     ]
   },
   {
+    'aliases': ['flavortext'],
+    'examples': [
+      'Mighty Leap',
+      'Mighty Leap | ORI',
+      'Mighty Leap | Magic Origins'
+    ],
+    'description': 'Retrieves the flavor text of a card.',
+    'command': [
+      'flavor <card>',
+      'flavor <card|set>'
+    ]
+  },
+  {
     'aliases': [
       'sets',
       'versions',
