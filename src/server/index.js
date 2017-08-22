@@ -16,7 +16,7 @@ import ReactRoutes from '../common/routes'
 import AuthRouter from './routers/AuthRouter'
 import ApiRouter from './routers/ApiRouter'
 
-import { INVITE_URL } from '../common/globals'
+import { INVITE_URL, SUPPORT_INVITE_URL } from '../common/globals'
 
 import configureStore from '../common/store/configureStore'
 
@@ -45,6 +45,8 @@ app.use('/auth', AuthRouter)
 app.use('/api', ApiRouter)
 
 app.get('/invite', (req, res) => { res.redirect(INVITE_URL) })
+
+app.get('/support', (req, res) => { res.redirect(SUPPORT_INVITE_URL) })
 
 app.get('/*', (req, res) => {
   const store = configureStore({
