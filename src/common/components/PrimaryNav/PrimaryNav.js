@@ -106,7 +106,7 @@ class PrimaryNav extends React.Component {
               }} /> | Grimoire
             </NavbarBrand>
             <MediaQuery query='(min-width:992px)'>
-              <Link to={INVITE_URL}><Button>Add to Discord</Button></Link>
+              <a href={INVITE_URL}><Button>Add to Discord</Button></a>
             </MediaQuery>
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>
