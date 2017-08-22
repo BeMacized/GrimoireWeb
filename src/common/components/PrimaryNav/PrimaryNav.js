@@ -1,7 +1,7 @@
 // @Flow
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, NavLink as RRNavLink } from 'react-router-dom'
+import { NavLink as RRNavLink } from 'react-router-dom'
 import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap'
 import styled from 'styled-components'
 import MediaQuery from 'react-responsive'
