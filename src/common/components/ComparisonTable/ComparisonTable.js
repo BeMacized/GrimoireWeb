@@ -94,7 +94,7 @@ class ComparisonTable extends React.Component {
               <td>Supports Spoiler Cards</td>
               <td><SupportedIcon /></td>
               <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
