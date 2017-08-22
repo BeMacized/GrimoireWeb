@@ -23,7 +23,6 @@ class Dashboard extends React.Component {
     }
 
     if (!this.props.loggedIn) {
-      console.log(this.props)
       return (
         <Row>
           <Col lg={12}>

@@ -6,7 +6,6 @@ import { MANAGE_GUILD, hasPerms } from '../../common/utils/PermissionUtils'
 const router = Router()
 
 router.get('/guildpreferences/:id', async (req, res) => {
-  console.log(req.params.id)
   const preferences = await GuildPreferences.findOne({guildId: req.params.id})
   if (!preferences) {
     res.status(404).json({error: 'no preferences found'})
