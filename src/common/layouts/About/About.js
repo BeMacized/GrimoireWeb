@@ -207,8 +207,7 @@ class About extends React.Component {
               <CardBlock>
                 <CardTitle><FontAwesome name='question-circle' /> How can I host an instance of this bot by myself?</CardTitle>
                 <CardText>
-                    Please read the instructions in the readme file in the main <a href={GITHUB_MAIN_REPO}>GitHub Repository.</a><br />
-                    Do note that I offer no additional technical support for getting this to run. For this you're on your own.
+                    Instructions for selfhosting the bot are coming soon! In the meanwhile you can take a look at the <a href={GITHUB_MAIN_REPO}>GitHub Repository.</a> to see if you can figure out something for yourself.
                 </CardText>
               </CardBlock>
             </Card>

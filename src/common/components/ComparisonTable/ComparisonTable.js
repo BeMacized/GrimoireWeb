@@ -132,7 +132,7 @@ class ComparisonTable extends React.Component {
                 <FontAwesome id='comp0avgPricing' name='check' />
               </td>
               <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
@@ -282,7 +282,7 @@ class ComparisonTable extends React.Component {
             </tr>
           </tfoot>
         </Table>
-        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-16. </b>If any of this data is incorrect please notify the Developer.</p>
+        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-22. </b>If any of this data is incorrect please notify the Developer.</p>
       </div>
     )
   }
