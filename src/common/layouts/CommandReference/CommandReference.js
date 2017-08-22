@@ -175,9 +175,9 @@ const shortcuts = [
 const commands = [
   {
     'aliases': [],
-    'examples': ['', 'pricing'],
-    'description': 'Shows the general bot help text, or help for the specified command.',
-    'command': ['help [command]']
+    'examples': [],
+    'description': 'Sends you help via a private message',
+    'command': ['help']
   },
   {
     'aliases': ['cardart'],
