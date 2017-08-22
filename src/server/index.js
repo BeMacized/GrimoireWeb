@@ -16,6 +16,8 @@ import ReactRoutes from '../common/routes'
 import AuthRouter from './routers/AuthRouter'
 import ApiRouter from './routers/ApiRouter'
 
+import { INVITE_URL } from '../common/globals'
+
 import configureStore from '../common/store/configureStore'
 
 mongoose.connect(process.env.RAZZLE_MONGO_URL || 'mongodb://localhost/GrimoireWeb')
@@ -41,6 +43,8 @@ app.use(passport.session())
 app.use('/auth', AuthRouter)
 
 app.use('/api', ApiRouter)
+
+app.get('/invite', (req, res) => { res.redirect(INVITE_URL) })
 
 app.get('/*', (req, res) => {
   const store = configureStore({
