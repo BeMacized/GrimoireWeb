@@ -150,6 +150,13 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
+              <td>MTGGoldfish.com</td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
               <td>
                 <UncontrolledTooltip placement='top' target='comp0currencyConv'>
                   Force currency conversion via a setting in the Dashboard
