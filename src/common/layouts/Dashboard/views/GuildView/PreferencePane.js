@@ -74,6 +74,12 @@ class PreferencePane extends React.Component {
       const preferenceString = response.body.preferences
       // Parse preferences
       preferences = this.getPreferencesFromString(preferenceString)
+      // Insert defaults
+      preferenceTemplate.filter(p => !preferences.hasOwnProperty(p.id)).forEach(p => {
+        console.log(preferences)
+        console.log(newGuild.id, 'INSERTING DEFAULT', p.id)
+        preferences[p.id] = p.default
+      })
     } catch (e) { }
     // Set state
     this.setState(Object.assign({}, this.state, {
@@ -245,6 +251,12 @@ class PreferencePane extends React.Component {
               <Preference id={14} value={this.state.preferences[14]} onModify={v => this.setPreference(14, v)} />
               <Preference id={15} value={this.state.preferences[15]} onModify={v => this.setPreference(15, v)} />
             </List>
+            <List subheader={<ListSubheader>Marketplaces</ListSubheader>}>
+              <Preference id={17} value={this.state.preferences[17]} onModify={v => this.setPreference(17, v)} disabled={this.state.preferences[14] !== 0} />
+              <Preference id={18} value={this.state.preferences[18]} onModify={v => this.setPreference(18, v)} disabled={this.state.preferences[14] !== 0} />
+              <Preference id={19} value={this.state.preferences[19]} onModify={v => this.setPreference(19, v)} disabled={this.state.preferences[14] !== 0} />
+              <Preference id={20} value={this.state.preferences[20]} onModify={v => this.setPreference(20, v)} disabled={this.state.preferences[14] !== 0} />
+            </List>
           </PaneWrapper>
         </SwipeableViews>
         <CSSTransitionGroup
@@ -299,21 +311,21 @@ class Preference extends React.Component {
   }
 
   render () {
-    const {id, value, onModify} = this.props
+    const {id, value, onModify, disabled = false} = this.props
     const preference = preferenceTemplate.find(o => o.id === id)
     if (preference.type === 'SWITCH') {
       return (
-        <ListItem button onClick={() => onModify(value === 1 ? 0 : 1)}>
+        <ListItem button onClick={() => onModify(value === 1 ? 0 : 1)} disabled={disabled}>
           <ListItemText primary={preference.name} secondary={preference.description} />
           <ListItemSecondaryAction>
-            <Switch onClick={() => onModify(value === 1 ? 0 : 1)} checked={value === 1} />
+            <Switch onClick={() => onModify(value === 1 ? 0 : 1)} checked={value === 1} disabled={disabled} />
           </ListItemSecondaryAction>
         </ListItem>
       )
     }
     if (preference.type === 'MULTI') {
       return (
-        <ListItem button onClick={e => this.openMenu(e.currentTarget)}>
+        <ListItem button onClick={e => this.openMenu(e.currentTarget)} disabled={disabled}>
           <ListItemText primary={preference.name} secondary={preference.options[value][0]} />
           <Menu
             id={'menu_' + id}
@@ -343,7 +355,8 @@ class Preference extends React.Component {
 Preference.propTypes = {
   id: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
-  onModify: PropTypes.func
+  onModify: PropTypes.func,
+  disabled: PropTypes.bool
 }
 
 const preferenceTemplate = [
@@ -472,6 +485,30 @@ const preferenceTemplate = [
     'id': 16,
     'name': 'Show Flavor Text',
     'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 17,
+    'name': 'MagicCardMarket.eu',
+    'default': 1
+  },
+  {
+    'type': 'SWITCH',
+    'id': 18,
+    'name': 'TCGPlayer.com',
+    'default': 1
+  },
+  {
+    'type': 'SWITCH',
+    'id': 19,
+    'name': 'MTGGoldfish.com',
+    'default': 1
+  },
+  {
+    'type': 'SWITCH',
+    'id': 20,
+    'name': 'Scryfall.com',
+    'default': 1
   }
 ]
 
