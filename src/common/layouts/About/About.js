@@ -81,6 +81,9 @@ class About extends React.Component {
                 Grimoire was initially made for private use at a specific Discord server: "Magic & Chill". Grimoire is still partnered with this Server.
                 If you're interested in joining us over there, feel free to join via <a href='https://discord.gg/vqsFzgJ'>this link</a>.
                 Currently, Grimoire is being developed by a single Developer, <a href='https://bemacized.net/'>@BeMacized</a>, in his spare time.
+                <br/>
+                <br/>
+                Grimoire has been heavily inspired by other MTG Discord bots, such as <a href="https://github.com/bra1n/judgebot">JudgeBot</a>, <a href="https://scryfall.com/bots">The Scryfall Bot</a> and <a href="https://github.com/MagicTheGathering/mtg-discord-bot">MagicTheGathering.io's Bot</a> 
             </p>
           </Col>
         </Row>
