@@ -74,10 +74,16 @@ app.get('/*', (req, res) => {
         <html lang="">
           <head>
               <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-              <meta charSet='utf-8' />
               <title>Mac's Grimoire</title>
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-              ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}">` : ''}
+              <meta name="Description" content="Mac's Grimoire brings many Magic the Gathering related tools straight into your Discord server." />
+              <meta name="keywords" content="mtg,magic the gathering,discord,bot,grimoire,pricing" />
+              <meta name="Author" content="BeMacized" />
+              <link rel="Publisher" href="https://bemacized.net/" />
+              <meta name="charset="utf-8" />
+              <link rel="Canonical" href="https://grimoire.bemacized.net/" />
+              <meta name="Robots" content="index, follow" />              
+              <meta name="viewport" content="width=device-width, initial-scale=1" />
+              ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}" />` : ''}
               <script src="${assets.client.js}" defer></script>
           </head>
           <body>
