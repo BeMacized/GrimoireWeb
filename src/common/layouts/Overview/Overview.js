@@ -189,8 +189,9 @@ class Overview extends React.Component {
             <Col md={8} sm={12} xs={12} className='pull-lg-4'>
               <H3Gradient>Non-English Card Support</H3Gradient>
               <TextBlock>
-          Do you happen to be interested in card prints from other countries? So are we! You'll be glad to know that Grimoire fully supports <b>Non-English</b> card names:
+                Do you use Non-English Magic cards a lot? You'll be glad to know that Grimoire fully supports <b>Non-English</b> cards:
                 <ul>
+                  <li><b>!oracle</b> and <b>!card</b> will show the Non-English card text if available</li>
                   <li>Every command supports Non-English input for card names</li>
                   <li><b><Link to='/reference/art'>!art</Link></b> will show Non-English card art if available</li>
                   <li>Use <b>!names</b> to find out about all other prints of a card from other countries</li>

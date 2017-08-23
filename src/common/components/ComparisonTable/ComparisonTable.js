@@ -237,14 +237,7 @@ class ComparisonTable extends React.Component {
               <td />
             </tr>
             <tr>
-              <td>Accepts Non-English Card Names</td>
-              <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-            </tr>
-            <tr>
-              <td>Non-English Art</td>
+              <td>Supports Non-English Card Names, Text &amp; Art</td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
