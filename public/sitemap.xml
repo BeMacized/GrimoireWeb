@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://grimoire.bemacized.net/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/about</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/oracle</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/legality</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/prints</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/standard</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/art</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/token</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/random</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/card</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/rulings</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/pricing</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/comprules</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/tournamentrules</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/infractionprocedure</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://grimoire.bemacized.net/reference/define</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
