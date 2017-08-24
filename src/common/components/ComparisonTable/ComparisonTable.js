@@ -142,8 +142,8 @@ class ComparisonTable extends React.Component {
             <tr>
               <td>Lowest Known Pricing (Via Scryfall)</td>
               <td>
-                <UncontrolledTooltip placement='top' target='comp0avgPricing'>Via Scryfall</UncontrolledTooltip>
-                <FontAwesome id='comp0avgPricing' name='check' />
+                <UncontrolledTooltip placement='top' target='comp0lowPricing'>Via Scryfall</UncontrolledTooltip>
+                <SupportedIcon id='comp0lowPricing' />
               </td>
               <td><SupportedIcon /></td>
               <td><SupportedIcon /></td>
@@ -153,11 +153,11 @@ class ComparisonTable extends React.Component {
               <td>MagicCardMarket.eu</td>
               <td><SupportedIcon /></td>
               <td>
-                <UncontrolledTooltip placement='top' target='comp1mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
+                <UncontrolledTooltip placement='top' target='comp1mcmPricing'>Only shows average.<br />Only shown when MagicCardMarket's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
                 <HalfSupportedIcon id='comp1mcmPricing' />*
               </td>
               <td>
-                <UncontrolledTooltip placement='top' target='comp2mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
+                <UncontrolledTooltip placement='top' target='comp2mcmPricing'>Only shows average.<br />Only shown when MagicCardMarket's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
                 <HalfSupportedIcon id='comp2mcmPricing' />*
               </td>
               <td><NotSupportedIcon /></td>
@@ -165,8 +165,14 @@ class ComparisonTable extends React.Component {
             <tr>
               <td>TCGPlayer.com</td>
               <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td>
+                <UncontrolledTooltip placement='top' target='comp1tcgPricing'>Only shows average.<br />Only shown when TCGPlayer's average is the lowest in USD on Scryfall</UncontrolledTooltip>
+                <HalfSupportedIcon id='comp1tcgPricing' />*
+              </td>
+              <td>
+                <UncontrolledTooltip placement='top' target='comp2tchPricing'>Only shows average.<br />Only shown when TCGPlayer's average is the lowest in USD on Scryfall</UncontrolledTooltip>
+                <HalfSupportedIcon id='comp2tcgPricing' />*
+              </td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
