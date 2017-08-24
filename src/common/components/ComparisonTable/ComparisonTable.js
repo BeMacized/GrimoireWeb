@@ -170,7 +170,7 @@ class ComparisonTable extends React.Component {
                 <HalfSupportedIcon id='comp1tcgPricing' />*
               </td>
               <td>
-                <UncontrolledTooltip placement='top' target='comp2tchPricing'>Only shows average.<br />Only shown when TCGPlayer's average is the lowest in USD on Scryfall</UncontrolledTooltip>
+                <UncontrolledTooltip placement='top' target='comp2tcgPricing'>Only shows average.<br />Only shown when TCGPlayer's average is the lowest in USD on Scryfall</UncontrolledTooltip>
                 <HalfSupportedIcon id='comp2tcgPricing' />*
               </td>
               <td><NotSupportedIcon /></td>
