@@ -215,10 +215,7 @@ class ComparisonTable extends React.Component {
               <td>Infraction Procedures <Link to='/reference/infractionprocedure'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
-              <td >
-                <UncontrolledTooltip placement='top' target='comp2infProcedures'>Not Browsable</UncontrolledTooltip>
-                <HalfSupportedIcon id='comp2infProcedures' />*
-              </td>
+              <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
