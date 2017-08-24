@@ -3,13 +3,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Table, UncontrolledTooltip, Button } from 'reactstrap'
 import FontAwesome from 'react-fontawesome'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { INVITE_URL } from '../../globals'
 import styles from './style.js'
 
-const SupportedIcon = () => (<FontAwesome name='check' />)
-const HalfSupportedIcon = () => (<FontAwesome name='exclamation-circle' />)
-const NotSupportedIcon = () => (<FontAwesome style={{color: '#ccc'}} name='times' />)
+const SupportedIcon = ({id}) => (<FontAwesome id={id} name='check' />)
+SupportedIcon.propTypes = { id: PropTypes.string }
+const HalfSupportedIcon = ({id}) => (<FontAwesome id={id} name='exclamation-circle' />)
+HalfSupportedIcon.propTypes = { id: PropTypes.string }
+const NotSupportedIcon = ({id}) => (<FontAwesome id={id} style={{color: '#ccc'}} name='times' />)
+NotSupportedIcon.propTypes = { id: PropTypes.string }
 
 class ComparisonTable extends React.Component {
   render () {
@@ -111,8 +114,7 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
               <td>
                 <UncontrolledTooltip placement='top' target='comp2random'>Via Hangman Game only</UncontrolledTooltip>
-
-                <HalfSupportedIcon />
+                <HalfSupportedIcon id='comp2random' />*
               </td>
               <td><NotSupportedIcon /></td>
             </tr>
@@ -150,13 +152,13 @@ class ComparisonTable extends React.Component {
             <tr>
               <td>MagicCardMarket.eu</td>
               <td><SupportedIcon /></td>
-              <td id='comp1mcmPricing'>
+              <td>
                 <UncontrolledTooltip placement='top' target='comp1mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
-                <HalfSupportedIcon />*
+                <HalfSupportedIcon id='comp1mcmPricing' />*
               </td>
-              <td id='comp2mcmPricing'>
+              <td>
                 <UncontrolledTooltip placement='top' target='comp2mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
-                <HalfSupportedIcon />*
+                <HalfSupportedIcon id='comp2mcmPricing' />*
               </td>
               <td><NotSupportedIcon /></td>
             </tr>
@@ -194,13 +196,12 @@ class ComparisonTable extends React.Component {
               <td />
               <td />
             </tr>
-
             <tr>
               <UncontrolledTooltip placement='top' target='comp2compRules'>Not Browsable</UncontrolledTooltip>
               <td>Comprehensive Rules <Link to='/reference/comprules'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
-              <td id='comp2compRules'><SupportedIcon />*</td>
+              <td><HalfSupportedIcon id='comp2compRules' />*</td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
@@ -215,7 +216,7 @@ class ComparisonTable extends React.Component {
               <td>Infraction Procedures <Link to='/reference/infractionprocedure'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
-              <td id='comp2infProcedures'><SupportedIcon />*</td>
+              <td ><SupportedIcon id='comp2infProcedures' />*</td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
