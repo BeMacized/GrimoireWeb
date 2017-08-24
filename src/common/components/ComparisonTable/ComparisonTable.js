@@ -8,6 +8,7 @@ import { INVITE_URL } from '../../globals'
 import styles from './style.js'
 
 const SupportedIcon = () => (<FontAwesome name='check' />)
+const HalfSupportedIcon = () => (<FontAwesome name='exclamation-circle' />)
 const NotSupportedIcon = () => (<FontAwesome style={{color: '#ccc'}} name='times' />)
 
 class ComparisonTable extends React.Component {
@@ -108,7 +109,11 @@ class ComparisonTable extends React.Component {
               <td>Random Cards <Link to='/reference/random'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td>
+                <UncontrolledTooltip placement='top' target='comp2random'>Via Hangman Game only</UncontrolledTooltip>
+
+                <HalfSupportedIcon />
+              </td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
@@ -133,7 +138,7 @@ class ComparisonTable extends React.Component {
               <td />
             </tr>
             <tr>
-              <td>Average Pricing</td>
+              <td>Lowest Known Pricing (Via Scryfall)</td>
               <td>
                 <UncontrolledTooltip placement='top' target='comp0avgPricing'>Via Scryfall</UncontrolledTooltip>
                 <FontAwesome id='comp0avgPricing' name='check' />
@@ -145,8 +150,14 @@ class ComparisonTable extends React.Component {
             <tr>
               <td>MagicCardMarket.eu</td>
               <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
+              <td id='comp1mcmPricing'>
+                <UncontrolledTooltip placement='top' target='comp1mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
+                <HalfSupportedIcon />*
+              </td>
+              <td id='comp2mcmPricing'>
+                <UncontrolledTooltip placement='top' target='comp2mcmPricing'>Only shows average.<br />Only when MCM's average is the lowest in EUR on Scryfall</UncontrolledTooltip>
+                <HalfSupportedIcon />*
+              </td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
@@ -193,11 +204,10 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
-              <UncontrolledTooltip placement='top' target='comp2tournamentRules'>Not Browsable</UncontrolledTooltip>
               <td>Tournament Rules <Link to='/reference/tournamentrules'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
-              <td id='comp2tournamentRules'><SupportedIcon />*</td>
+              <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
@@ -282,7 +292,7 @@ class ComparisonTable extends React.Component {
             </tr>
           </tfoot>
         </Table>
-        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-22. </b>If any of this data is incorrect please notify the Developer.</p>
+        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-24. </b>If any of this data is incorrect please notify the Developer.</p>
       </div>
     )
   }
