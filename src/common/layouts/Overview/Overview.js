@@ -128,7 +128,8 @@ class Overview extends React.Component {
             <TextBlock>
             Grimoire can fetch general <b>card information</b> in a useful condensed format.<br />
             Card symbol emoji work <b>right out of the box</b>!<br />
-            You can get more specific information by utilizing commands such as <b><Link to='/reference/oracle'>!oracle</Link></b>, <b><Link to='/reference/legality'>!legality</Link></b>, <b><Link to='/reference/prints'>!prints</Link></b> or <b><Link to='/reference/standard'>!rulings</Link></b>.
+            You can get more specific information by utilizing commands such as <b><Link to='/reference/oracle'>!oracle</Link></b>, <b><Link to='/reference/legality'>!legality</Link></b>, <b><Link to='/reference/prints'>!prints</Link></b> or <b><Link to='/reference/standard'>!rulings</Link></b>.<br />
+            Most commands support the entire <b><a href='https://scryfall.com/docs/reference'>Scryfall Syntax</a></b> for finding the right card!
             </TextBlock>
             <H3Gradient>Art Fetching</H3Gradient>
             <TextBlock>

@@ -508,7 +508,7 @@ const preferenceTemplate = [
     'type': 'SWITCH',
     'id': 20,
     'name': 'Scryfall.com',
-    'default': 1
+    'default': 0
   }
 ]
 

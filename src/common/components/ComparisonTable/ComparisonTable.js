@@ -109,6 +109,16 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
+              <td>Scryfall Syntax Support <a href='https://scryfall.com/docs/reference'><FontAwesome name='book' /></a></td>
+              <td><SupportedIcon /></td>
+              <td>
+                <UncontrolledTooltip placement='top' target='comp1scryfallSyntax'>Only for exact matches.</UncontrolledTooltip>
+                <HalfSupportedIcon id='comp1scryfallSyntax' />*
+              </td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
               <td>Random Cards <Link to='/reference/random'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>

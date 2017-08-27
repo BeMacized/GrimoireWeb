@@ -17,7 +17,7 @@ class Shortcut extends React.Component {
           <code>g!{this.props.shortcut.command}</code>
         </td>
         <td>
-          {this.props.shortcut.examples.map(ss => (<span key={shortid()}><code>{ss}</code><br /></span>))}
+          {this.props.shortcut.examples.map(ss => (<span key={shortid()}>{ss.substring(0, 1) === '!' ? <span dangerouslySetInnerHTML={{__html: '<br />' + ss.substring(1)}} /> : <code>{ss}</code>}<br /></span>))}
         </td>
       </tr>
     )
@@ -41,9 +41,7 @@ const Command = (props) =>
     <td>
       {props.command.command.map(ss => (<span key={shortid()}><code>g!{ss}</code><br /></span>))}
     </td>
-    <td>
-      {props.command.description}
-    </td>
+    <td dangerouslySetInnerHTML={{__html: props.command.description}} />
     <td>
       {props.command.aliases.map(ss => (<span key={shortid()}><code>{ss}</code> </span>))}
     </td>
@@ -144,30 +142,32 @@ export default CommandReference
 const shortcuts = [
   {
     shortcuts: [
-      '<<card>>',
-      '<<card | set>>',
-      '[[card]]',
-      '[[<card | set]]'
+      '<<query>>',
+      '<<query | set>>',
+      '[[query]]',
+      '[[<query | set]]'
     ],
     command: 'card',
     examples: [
       '<<Mighty Leap>>',
       '<<Mighty Leap | ORI>>',
-      '[[Mighty Leap | Magic Origins]]'
+      '[[Mighty Leap | Magic Origins]]',
+      '!This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.'
     ]
   },
   {
     shortcuts: [
-      '<<$card>>',
-      '<<$card | set>>',
-      '[[$card]]',
-      '[[$card | set]]'
+      '<<$query>>',
+      '<<$query | set>>',
+      '[[$query]]',
+      '[[$query | set]]'
     ],
     command: 'pricing',
     examples: [
       '<<$Mighty Leap>>',
       '<<$Mighty Leap | ORI>>',
-      '[[$Mighty Leap | Magic Origins]]'
+      '[[$Mighty Leap | Magic Origins]]',
+      '!This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.'
     ]
   }
 ].sort((a, b) => (a.command > b.command) ? 1 : ((b.command > a.command) ? -1 : 0))
@@ -189,10 +189,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Fetch the full art of a card',
+    'description': 'Fetch the full art of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'art <card|set>',
-      'art <card>'
+      'art <query|set>',
+      'art <query>'
     ]
   },
   {
@@ -208,10 +208,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the oracle text of a card.',
+    'description': 'Retrieves the oracle text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'oracle <card|set>',
-      'oracle <card>'
+      'oracle <query|set>',
+      'oracle <query>'
     ]
   },
   {
@@ -224,10 +224,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the current pricing for a card.',
+    'description': 'Retrieves the current pricing for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'pricing <card|set>',
-      'pricing <card>'
+      'pricing <query|set>',
+      'pricing <query>'
     ]
   },
   {
@@ -261,10 +261,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves all known foreign names for a card',
+    'description': 'Retrieves all known foreign names for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'names <card|set>',
-      'names <card>'
+      'names <query|set>',
+      'names <query>'
     ]
   },
   {
@@ -287,10 +287,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the flavor text of a card.',
+    'description': 'Retrieves the flavor text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'flavor <card|set>',
-      'flavor <card>'
+      'flavor <query|set>',
+      'flavor <query>'
     ]
   },
   {
@@ -343,10 +343,10 @@ const commands = [
       'Mighty Leap',
       'Mighty Leap | Magic Origins'
     ],
-    'description': 'Retrieves all sets that a card was printed in. ',
+    'description': 'Retrieves all sets that a card was printed in.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'prints <card|set>',
-      'prints <card>'
+      'prints <query|set>',
+      'prints <query>'
     ]
   },
   {
@@ -368,10 +368,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the current rulings of the specified card.',
+    'description': 'Retrieves the current rulings of the specified card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'rulings <card|set>',
-      'rulings <card>'
+      'rulings <query|set>',
+      'rulings <query>'
     ]
   },
   {
@@ -387,10 +387,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Checks the legality of a card, for every known format',
+    'description': 'Checks the legality of a card, for every known format<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'legality <card|set>',
-      'legality <card>'
+      'legality <query|set>',
+      'legality <query>'
     ]
   },
   {
@@ -414,10 +414,10 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Fetch information for a card',
+    'description': 'Fetch information for a card<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
-      'card <card|set>',
-      'card <card>'
+      'card <query|set>',
+      'card <query>'
     ]
   }
 ].sort((a, b) => (a.command[0] > b.command[0]) ? 1 : ((b.command[0] > a.command[0]) ? -1 : 0))
