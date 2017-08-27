@@ -202,6 +202,12 @@ const commands = [
     'command': ['help']
   },
   {
+    'aliases': ['stats'],
+    'examples': [],
+    'description': 'View statistics for Grimoire.',
+    'command': ['statistics']
+  },
+  {
     'aliases': ['cardtext'],
     'examples': [
       'Mighty Leap | ORI',

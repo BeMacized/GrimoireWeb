@@ -369,7 +369,8 @@ const preferenceTemplate = [
       ['g! - Default', 'g!'],
       ['! - Exclamation Mark', '!'],
       ['_ - Underscore', '_'],
-      ["@Mac's Grimoire - Mention", '@']
+      ["@Mac's Grimoire - Mention", '@'],
+      ['grim! - Longer', 'grim!']
     ]
   },
   {
