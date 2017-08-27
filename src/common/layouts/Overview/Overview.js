@@ -176,7 +176,7 @@ class Overview extends React.Component {
               </TextBlock>
               <H3Gradient>Uhm.. did you mean?</H3Gradient>
               <TextBlock>
-            In case you don't know exactly what you're looking for, Grimoire can help you out. Every rule command is outfitted to suggest alternatives in case you didn't quite hit the mark. Just try and you'll see!
+                In case you don't know exactly what you're looking for, Grimoire can help you out. All rules are browsable and Grimoire will automatically pick the closest match for any card you query. The <b><a href='https://scryfall.com/docs/reference'>Scryfall Syntax</a></b> can always help you out as well!
               </TextBlock>
             </Col>
           </Row>
