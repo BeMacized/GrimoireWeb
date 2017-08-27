@@ -330,7 +330,7 @@ const commands = [
       ''
     ],
     'description': 'Show a random card of a certain type.',
-    'command': ['random [supertype] [type] [subtype] [rarity] [set] [setcode] [layout]']
+    'command': ['random [supertype] [type] [subtype] [rarity] [set] [setcode]']
   },
   {
     'aliases': [
