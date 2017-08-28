@@ -23,11 +23,11 @@ class Dashboard extends React.Component {
     }
 
     if (!this.props.loggedIn) {
+      if (typeof window !== 'undefined') window.top.location.href = '/auth/discord'
       return (
         <Row>
           <Col lg={12}>
             <h1 style={{textAlign: 'center', marginTop: '50px'}}>Redirecting you to Discord...</h1>
-            <Redirect location='/auth/discord' />
           </Col>
         </Row>
       )

@@ -73,6 +73,7 @@ app.get('/*', (req, res) => {
       `<!doctype html>
         <html lang="">
           <head>
+              <base target="_parent" />
               <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
               <title>Mac's Grimoire | A Discord Bot for Magic The Gathering</title>
               <meta name="Description" content="Mac's Grimoire brings many Magic the Gathering related tools straight into your Discord server." />
