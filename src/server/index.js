@@ -81,7 +81,7 @@ app.get('/*', (req, res) => {
               <meta name="Author" content="BeMacized" />
               <link rel="Publisher" href="https://bemacized.net/" />
               <meta name="charset="utf-8" />
-              <link rel="Canonical" href="https://grimoire.bemacized.net/" />
+              <link rel="Canonical" href="https://grimoirebot.xyz/" />
               <meta name="Robots" content="index, follow" />              
               <meta name="viewport" content="width=device-width, initial-scale=1" />
               ${assets.client.css ? `<link rel="stylesheet" href="${assets.client.css}" />` : ''}
