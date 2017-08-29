@@ -223,6 +223,7 @@ class PreferencePane extends React.Component {
             <List subheader={<ListSubheader>General</ListSubheader>}>
               <Preference id={0} value={this.state.preferences[0]} onModify={v => this.setPreference(0, v)} />
               <Preference id={22} value={this.state.preferences[22]} onModify={v => this.setPreference(22, v)} />
+              <Preference id={24} value={this.state.preferences[24]} onModify={v => this.setPreference(24, v)} />
             </List>
             <List subheader={<ListSubheader>Inline References</ListSubheader>}>
               <Preference id={1} value={this.state.preferences[1]} onModify={v => this.setPreference(1, v)} />
@@ -546,6 +547,12 @@ const preferenceTemplate = [
       ['Russian', 'Russian'],
       ['Spanish', 'Spanish']
     ]
+  },
+  {
+    'type': 'SWITCH',
+    'id': 24,
+    'name': "Show requesting user's name on command output.",
+    'default': 1
   }
 ]
 
