@@ -222,6 +222,7 @@ class PreferencePane extends React.Component {
           <PaneWrapper>
             <List subheader={<ListSubheader>General</ListSubheader>}>
               <Preference id={0} value={this.state.preferences[0]} onModify={v => this.setPreference(0, v)} />
+              <Preference id={22} value={this.state.preferences[22]} onModify={v => this.setPreference(22, v)} />
             </List>
             <List subheader={<ListSubheader>Inline References</ListSubheader>}>
               <Preference id={1} value={this.state.preferences[1]} onModify={v => this.setPreference(1, v)} />
@@ -231,6 +232,8 @@ class PreferencePane extends React.Component {
           <PaneWrapper>
             <List subheader={<ListSubheader>General</ListSubheader>}>
               <Preference id={13} value={this.state.preferences[13]} onModify={v => this.setPreference(13, v)} />
+              <Preference id={21} value={this.state.preferences[21]} onModify={v => this.setPreference(21, v)} />
+              <Preference id={23} value={this.state.preferences[23]} onModify={v => this.setPreference(23, v)} />
             </List>
             <List subheader={<ListSubheader>Card Properties</ListSubheader>}>
               <Preference id={16} value={this.state.preferences[16]} onModify={v => this.setPreference(16, v)} />
@@ -254,8 +257,8 @@ class PreferencePane extends React.Component {
             <List subheader={<ListSubheader>Marketplaces</ListSubheader>}>
               <Preference id={17} value={this.state.preferences[17]} onModify={v => this.setPreference(17, v)} disabled={this.state.preferences[14] !== 0} />
               <Preference id={18} value={this.state.preferences[18]} onModify={v => this.setPreference(18, v)} disabled={this.state.preferences[14] !== 0} />
-              <Preference id={19} value={this.state.preferences[19]} onModify={v => this.setPreference(19, v)} disabled={this.state.preferences[14] !== 0} />
-              <Preference id={20} value={this.state.preferences[20]} onModify={v => this.setPreference(20, v)} disabled={this.state.preferences[14] !== 0} />
+              <Preference id={19} value={this.state.preferences[19]} onModify={v => this.setPreference(19, v)} disabled={this.state.preferences[14] !== 0 && this.state.preferences[14] !== 3 && this.state.preferences[14] !== 4} />
+              <Preference id={20} value={this.state.preferences[20]} onModify={v => this.setPreference(20, v)} disabled={this.state.preferences[14] !== 0 && this.state.preferences[14] !== 3 && this.state.preferences[14] !== 4} />
             </List>
           </PaneWrapper>
         </SwipeableViews>
@@ -465,7 +468,9 @@ const preferenceTemplate = [
     'options': [
       ['All marketplaces: One printing (Latest default)', 'ALL_MARKETS'],
       ['Scryfall only: One printing (Latest default)', 'SCRYFALL_ONE'],
-      ['Scryfall only: All printings', 'SCRYFALL_ALL']
+      ['Scryfall only: All printings', 'SCRYFALL_ALL'],
+      ['MTGO: One printing (Latest default)', 'MTGO_ONE'],
+      ['MTGO: All printings (Latest default)', 'MTGO_ALL']
     ]
   },
   {
@@ -510,6 +515,37 @@ const preferenceTemplate = [
     'id': 20,
     'name': 'Scryfall.com',
     'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 21,
+    'name': 'Show Pricing Below Card',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 22,
+    'name': 'Remove command calls (Requires "Manage Messages" Permission)',
+    'default': 0
+  },
+  {
+    'type': 'MULTI',
+    'id': 23,
+    'name': 'Preferred Language (For Card Lookups)',
+    'default': 0,
+    'options': [
+      ['English', 'English'],
+      ['Chinese Simplified', 'Chinese Simplified'],
+      ['Chinese Traditional', 'Chinese Traditional'],
+      ['French', 'French'],
+      ['German', 'German'],
+      ['Italian', 'Italian'],
+      ['Japanese', 'Japanese'],
+      ['Korean', 'Korean'],
+      ['Portuguese (Brazil)', 'Portuguese (Brazil)'],
+      ['Russian', 'Russian'],
+      ['Spanish', 'Spanish']
+    ]
   }
 ]
 
