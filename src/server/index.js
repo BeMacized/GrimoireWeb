@@ -76,7 +76,7 @@ app.get('/*', (req, res) => {
               <base target="_parent" />
               <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
               <title>Mac's Grimoire | A Discord Bot for Magic The Gathering</title>
-              <meta name="Description" content="Mac's Grimoire brings many Magic the Gathering related tools straight into your Discord server." />
+              <meta name="Description" content="Mac's Grimoire brings many Magic the Gathering related tools straight into your Discord server. This MTG Discord Bot fetches cards, looks up pricing, and much more!" />
               <meta name="keywords" content="mtg,magic the gathering,discord,bot,grimoire,pricing" />
               <meta name="Author" content="BeMacized" />
               <link rel="Publisher" href="https://bemacized.net/" />
