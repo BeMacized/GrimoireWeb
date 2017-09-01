@@ -425,5 +425,17 @@ const commands = [
       'card <query|set>',
       'card <query>'
     ]
+  },
+  {
+    'aliases': ['bl'],
+    'examples': [
+      'standard',
+      'legacy',
+      'commander'
+    ],
+    'description': 'Retrieve the banlist for a specific format',
+    'command': [
+      'banlist <standard | modern | legacy | vintage | commander | future | pauper | frontier | penny | 1v1 | duel>'
+    ]
   }
 ].sort((a, b) => (a.command[0] > b.command[0]) ? 1 : ((b.command[0] > a.command[0]) ? -1 : 0))

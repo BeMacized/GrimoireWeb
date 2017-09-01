@@ -39,7 +39,9 @@ class GuildView extends React.Component {
                     <GuildList
                       guilds={this.props.guilds}
                       active={this.state.activeGuild}
-                      onSelect={(guild) => this.setState(Object.assign({}, this.state, { activeGuild: guild }))} />
+                      onSelect={(guild) => this.setState(Object.assign({}, this.state, { activeGuild: guild }))}
+                      userId={this.props.userId}
+                    />
                   </Paper>
                 </Col>
               </Row>
@@ -52,7 +54,8 @@ class GuildView extends React.Component {
 }
 
 GuildView.propTypes = {
-  guilds: PropTypes.arrayOf(PropTypes.object.isRequired)
+  guilds: PropTypes.arrayOf(PropTypes.object.isRequired),
+  userId: PropTypes.string
 }
 
 export default GuildView

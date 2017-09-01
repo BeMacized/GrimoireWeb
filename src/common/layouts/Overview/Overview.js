@@ -150,12 +150,13 @@ class Overview extends React.Component {
             <TextBlock>
             Quickly look up <b>price data</b> for singles with Grimoire. Currently, Grimoire is able to look up card prices with the following <b>marketplaces</b>:
               <ul>
-                <li><a href='https://tcgplayer.com'>TCGPlayer.com</a></li>
-                <li><a href='https://magiccardmarket.eu'>MagicCardMarket.eu</a></li>
-                <li><a href='https://mtggoldfish.com'>MtgGoldfish.com</a></li>
+                <li><a href='https://tcgplayer.com'>TCGPlayer.com</a> (Paper)</li>
+                <li><a href='https://magiccardmarket.eu'>MagicCardMarket.eu</a> (Paper)</li>
+                <li><a href='https://mtggoldfish.com'>MtgGoldfish.com</a> (Paper & MTGO)</li>
               </ul>
               Additionally, Grimoire shows average card price spread over multiple marketplaces via Scryfall, including <b>MTG Online</b>.<br />
-            You will be given various price statistics per marketplace, with a link to the store page so you can quickly make a purchase.
+            You will be given various price statistics per marketplace, with a link to the store page so you can quickly make a purchase.<br />
+            You can select different presentation modes for pricing via the <Link to='/dashboard'>Dashboard</Link>.
             </TextBlock>
           </Col>
         </Row>

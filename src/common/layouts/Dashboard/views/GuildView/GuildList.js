@@ -3,17 +3,18 @@ import React from 'react'
 import List, { ListItem, ListItemText } from 'material-ui/List'
 import Avatar from 'material-ui/Avatar'
 import PropTypes from 'prop-types'
+import { DEVELOPER_ID } from '../../../../globals'
 
 import { MANAGE_GUILD, hasPerms } from '../../../../utils/PermissionUtils'
 
-const GuildList = ({guilds, active, onSelect}) =>
+const GuildList = ({guilds, active, onSelect, userId}) =>
   <List disablePadding>
     {(guilds || [])
       .sort((a, b) => a.name.localeCompare(b.name))
-      .sort((x, y) => (hasPerms(x.permissons, MANAGE_GUILD) === hasPerms(y.permissions, MANAGE_GUILD)) ? 0 : hasPerms(x.permissions, MANAGE_GUILD) ? -1 : 1)
+      .sort((x, y) => (parseInt(userId) === DEVELOPER_ID || hasPerms(x.permissons, MANAGE_GUILD) === hasPerms(y.permissions, MANAGE_GUILD)) ? 0 : hasPerms(x.permissions, MANAGE_GUILD) ? -1 : 1)
       .map(guild => {
         const isActive = active && guild.id === active.id
-        const permitted = hasPerms(guild.permissions, MANAGE_GUILD)
+        const permitted = parseInt(userId) === DEVELOPER_ID || hasPerms(guild.permissions, MANAGE_GUILD)
         return (
           <ListItem
             style={isActive ? {background: 'linear-gradient(to right, #f857a6, #ff5858)'} : {}}
@@ -41,7 +42,8 @@ const GuildList = ({guilds, active, onSelect}) =>
 GuildList.propTypes = {
   guilds: PropTypes.arrayOf(PropTypes.object),
   active: PropTypes.object,
-  onSelect: PropTypes.func
+  onSelect: PropTypes.func,
+  userId: PropTypes.string
 }
 
 export default GuildList

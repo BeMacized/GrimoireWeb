@@ -233,7 +233,6 @@ class PreferencePane extends React.Component {
           <PaneWrapper>
             <List subheader={<ListSubheader>General</ListSubheader>}>
               <Preference id={13} value={this.state.preferences[13]} onModify={v => this.setPreference(13, v)} />
-              <Preference id={21} value={this.state.preferences[21]} onModify={v => this.setPreference(21, v)} />
               <Preference id={23} value={this.state.preferences[23]} onModify={v => this.setPreference(23, v)} />
             </List>
             <List subheader={<ListSubheader>Card Properties</ListSubheader>}>
@@ -248,6 +247,7 @@ class PreferencePane extends React.Component {
               <Preference id={10} value={this.state.preferences[10]} onModify={v => this.setPreference(10, v)} />
               <Preference id={11} value={this.state.preferences[11]} onModify={v => this.setPreference(11, v)} />
               <Preference id={12} value={this.state.preferences[12]} onModify={v => this.setPreference(12, v)} />
+              <Preference id={21} value={this.state.preferences[21]} onModify={v => this.setPreference(21, v)} />
             </List>
           </PaneWrapper>
           <PaneWrapper>
@@ -520,7 +520,7 @@ const preferenceTemplate = [
   {
     'type': 'SWITCH',
     'id': 21,
-    'name': 'Show Pricing Below Card',
+    'name': 'Show pricing',
     'default': 0
   },
   {

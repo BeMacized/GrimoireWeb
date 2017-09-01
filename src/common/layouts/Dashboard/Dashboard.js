@@ -49,7 +49,7 @@ class Dashboard extends React.Component {
         </Row>
         <Row>
           <Col lg={12}>
-            <GuildView guilds={this.props.user.guilds} />
+            <GuildView guilds={this.props.user.guilds} userId={this.props.user.id} />
           </Col>
         </Row>
         <Row>

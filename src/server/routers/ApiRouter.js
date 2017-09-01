@@ -1,6 +1,7 @@
 // @flow
 import { Router } from 'express'
 import GuildPreferences from '../model/GuildPreferences'
+import { DEVELOPER_ID } from '../../common/globals'
 import { MANAGE_GUILD, hasPerms } from '../../common/utils/PermissionUtils'
 
 const router = Router()
@@ -22,7 +23,7 @@ router.post('/guildpreferences/:id', (req, res) => {
 
   const guild = req.user.guilds.find(guild => guild.id === req.params.id)
 
-  if (!guild || !hasPerms(guild.permissions, MANAGE_GUILD)) {
+  if ((!guild || !hasPerms(guild.permissions, MANAGE_GUILD)) && parseInt(req.user.id) !== DEVELOPER_ID) {
     res.status(403).json({error: 'forbidden'})
     return
   }
