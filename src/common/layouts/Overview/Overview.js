@@ -236,15 +236,11 @@ class Overview extends React.Component {
             </Col>
             <Col md={4} sm={12} xs={12}>
               <ImageWrapperGrey>
-                <img src='/img/screenshots/Random.png' alt='Random Cards' />
+                <img src='/img/screenshots/Banlist.png' alt='Banlists' />
               </ImageWrapperGrey>
-              <H3Gradient>Random Cards</H3Gradient>
+              <H3Gradient>Is it banned?</H3Gradient>
               <TextBlock>
-              Pull up a random card based on any property using the <b><Link to='/reference/random'>!random</Link></b> command.<br /><br />
-              For example, want to pull a random mythic legendary creature from the latest commander set?<br />
-                <span style={{width: '100%', textAlign: 'center', display: 'block', margin: 'none', padding: 'none'}}><code>!random C17 mythic legendary creature</code></span>
-              will do the trick!<br />
-              You can base your search on types, subtypes, supertypes, rarities, sets and more!
+                You can quickly pull up the relevant ban list for any format using the <b><Link to='/reference/banlist'>!banlist</Link></b> command.<br />
               </TextBlock>
             </Col>
             <Col md={4} sm={12} xs={12}>
@@ -255,6 +251,32 @@ class Overview extends React.Component {
               <TextBlock>
               Want to know for how much longer your standard deck will be legal, before it rotates out?<br />
               Grimoire allows you to pull up the current <b>Standard Format</b> with exact dates, so you know exactly what you can play.
+              </TextBlock>
+            </Col>
+          </Row>
+
+          <Row style={{paddingTop: '30px'}}>
+            <Col md={6} sm={12} xs={12}>
+              <ImageWrapperWhite>
+                <img src='/img/screenshots/Locator.png' alt='Wizards Locator' />
+              </ImageWrapperWhite>
+              <H3Gradient>Game Store Locator</H3Gradient>
+              <TextBlock>
+          You can easily find game stores and events in your area using the <b><Link to='/reference/locator'>!locator</Link></b> command.<br />
+          Results are pulled directly from the <a href='http://locator.wizards.com/'>Wizards Locator</a>, and are presented using a useful map!
+              </TextBlock>
+            </Col>
+            <Col md={6} sm={12} xs={12}>
+              <ImageWrapperGrey>
+                <img src='/img/screenshots/Random.png' alt='Random Cards' />
+              </ImageWrapperGrey>
+              <H3Gradient>Random Cards</H3Gradient>
+              <TextBlock>
+              Pull up a random card based on any property using the <b><Link to='/reference/random'>!random</Link></b> command.<br /><br />
+              For example, want to pull a random mythic legendary creature from the latest commander set?<br />
+                <span style={{width: '100%', textAlign: 'center', display: 'block', margin: 'none', padding: 'none'}}><code>!random C17 mythic legendary creature</code></span>
+              will do the trick!<br />
+              You can base your search on types, subtypes, supertypes, rarities, sets and more!
               </TextBlock>
             </Col>
           </Row>

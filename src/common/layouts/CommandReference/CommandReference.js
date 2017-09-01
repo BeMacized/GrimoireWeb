@@ -437,5 +437,16 @@ const commands = [
     'command': [
       'banlist <standard | modern | legacy | vintage | commander | future | pauper | frontier | penny | 1v1 | duel>'
     ]
+  },
+  {
+    'aliases': ['locate'],
+    'examples': [
+      'Sydney',
+      '1027 Newport Avenue Pawtucket, RI 02862'
+    ],
+    'description': 'Search for game stores on the Wizards Locator',
+    'command': [
+      'locator <location>'
+    ]
   }
 ].sort((a, b) => (a.command[0] > b.command[0]) ? 1 : ((b.command[0] > a.command[0]) ? -1 : 0))

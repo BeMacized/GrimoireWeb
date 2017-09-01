@@ -142,6 +142,13 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
+            <tr>
+              <td>Wizards Locator Lookups <Link to='/reference/locator'><FontAwesome name='book' /></Link></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
             <tr className='categoryRow'>
               <td>Card Pricing <Link to='/reference/pricing'><FontAwesome name='book' /></Link></td>
               <td />
