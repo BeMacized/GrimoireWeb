@@ -88,13 +88,6 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
-              <td>Card Rulings <Link to='/reference/rulings'><FontAwesome name='book' /></Link></td>
-              <td><SupportedIcon /></td>
-              <td><SupportedIcon /></td>
-              <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-            </tr>
-            <tr>
               <td>Supports Spoiler Cards</td>
               <td><SupportedIcon /></td>
               <td><SupportedIcon /></td>
@@ -105,6 +98,13 @@ class ComparisonTable extends React.Component {
               <td>Card Symbols</td>
               <td><SupportedIcon /></td>
               <td><SupportedIcon /></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
+              <td>Standard Rotation Fetching <Link to='/reference/standard'><FontAwesome name='book' /></Link></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
@@ -213,6 +213,13 @@ class ComparisonTable extends React.Component {
               <td />
             </tr>
             <tr>
+              <td>Card Rulings <Link to='/reference/rulings'><FontAwesome name='book' /></Link></td>
+              <td><SupportedIcon /></td>
+              <td><SupportedIcon /></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
               <UncontrolledTooltip placement='top' target='comp2compRules'>Not Browsable</UncontrolledTooltip>
               <td>Comprehensive Rules <Link to='/reference/comprules'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
@@ -239,6 +246,13 @@ class ComparisonTable extends React.Component {
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
               <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
+              <td>Fetch Banlists <Link to='/reference/banlist'><FontAwesome name='book' /></Link></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
             <tr className='categoryRow'>
@@ -268,13 +282,6 @@ class ComparisonTable extends React.Component {
               <td />
               <td />
               <td />
-            </tr>
-            <tr>
-              <td>Standard Rotation Fetching <Link to='/reference/standard'><FontAwesome name='book' /></Link></td>
-              <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
             </tr>
             <tr>
               <td>Self-hostable <Link to='/about'><FontAwesome name='book' /></Link></td>
