@@ -81,9 +81,9 @@ class About extends React.Component {
                 Grimoire was initially made for private use at a specific Discord server: "Magic & Chill". Grimoire is still partnered with this Server.
                 If you're interested in joining us over there, feel free to join via <a href='https://discord.gg/vqsFzgJ'>this link</a>.
                 Currently, Grimoire is being developed by a single Developer, <a href='https://bemacized.net/'>@BeMacized</a>, in his spare time.
-                <br/>
-                <br/>
-                Grimoire has been heavily inspired by other MTG Discord bots, such as <a href="https://github.com/bra1n/judgebot">JudgeBot</a>, <a href="https://scryfall.com/bots">The Scryfall Bot</a> and <a href="https://github.com/MagicTheGathering/mtg-discord-bot">MagicTheGathering.io's Bot</a> 
+              <br />
+              <br />
+                Grimoire has been heavily inspired by other MTG Discord bots, such as <a href='https://github.com/bra1n/judgebot'>JudgeBot</a>, <a href='https://scryfall.com/bots'>The Scryfall Bot</a> and <a href='https://github.com/MagicTheGathering/mtg-discord-bot'>MagicTheGathering.io's Bot</a>
             </p>
           </Col>
         </Row>
@@ -167,7 +167,7 @@ class About extends React.Component {
                   <br />
                 </ul>
                 <CardText>
-                  The monthly running cost of Grimoire is €7.26, which is currently paid out of my own pocket. If you are hoster who is willing to help out on the hosting side of things, any help is greatly appreciated.
+                  The monthly running cost of Grimoire is €3.61, which is currently paid out of my own pocket. If you are hoster who is willing to help out on the hosting side of things, any help is greatly appreciated.
                 </CardText>
               </CardBlock>
             </Card>
