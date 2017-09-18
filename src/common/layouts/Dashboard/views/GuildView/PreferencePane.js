@@ -228,6 +228,16 @@ class PreferencePane extends React.Component {
               <Preference id={1} value={this.state.preferences[1]} onModify={v => this.setPreference(1, v)} />
               <Preference id={2} value={this.state.preferences[2]} onModify={v => this.setPreference(2, v)} />
             </List>
+            <List subheader={<ListSubheader>Performance Tweaks</ListSubheader>}>
+              <ListItem>
+                <ListItemText secondary='Enabling some of the following tweaks could help you gain some speed' />
+              </ListItem>
+              <Preference id={29} value={this.state.preferences[29]} onModify={v => this.setPreference(29, v)} />
+              <Preference id={25} value={this.state.preferences[25]} onModify={v => this.setPreference(25, v)} />
+              <Preference id={26} value={this.state.preferences[26]} onModify={v => this.setPreference(26, v)} />
+              <Preference id={27} value={this.state.preferences[27]} onModify={v => this.setPreference(27, v)} />
+              <Preference id={28} value={this.state.preferences[28]} onModify={v => this.setPreference(28, v)} />
+            </List>
           </PaneWrapper>
           <PaneWrapper>
             <List subheader={<ListSubheader>General</ListSubheader>}>
@@ -546,6 +556,39 @@ const preferenceTemplate = [
       ['Russian', 'Russian'],
       ['Spanish', 'Spanish']
     ]
+  },
+  {
+    'type': 'SWITCH',
+    'id': 25,
+    'name': 'Disable Non-English Card Queries',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 26,
+    'name': 'Disable Loading Messages',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 27,
+    'name': 'Disable Card Image Verification',
+    'description': 'By default, Grimoire verifies every card image\'s validity before sending it.',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 28,
+    'name': 'Disable print checks with Scryfall',
+    'description': 'Scryfall is more up-to-date, but takes more time to check.',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 29,
+    'name': 'Prefer Low Quality Images',
+    'description': 'Low Quality images load faster on slow connections.',
+    'default': 0
   }
 ]
 
