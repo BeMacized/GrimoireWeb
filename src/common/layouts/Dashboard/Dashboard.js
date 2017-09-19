@@ -39,7 +39,7 @@ class Dashboard extends React.Component {
           <Col lg={12}>
             <div className='d-flex align-items-center' style={{justifyContent: 'space-between'}}>
               <div className='d-flex align-items-center'>
-                <img style={styles.avatar} src={`https://cdn.discordapp.com/avatars/${this.props.user.id}/${this.props.user.avatar}.png?size=64`} />
+                <img style={styles.avatar} src={`https://cdn.discordapp.com/avatars/${this.props.user.id}/${this.props.user.avatar}?size=64`} />
                 <h1 style={{display: 'inline-block'}}>{this.props.user.username}'s Dashboard</h1>
               </div>
               <Button href='/auth/logout' style={{}}>Log out</Button>
