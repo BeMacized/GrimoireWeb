@@ -103,7 +103,7 @@ class About extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Person icon='/img/avatars/BeMacized.png' name='BeMacized' role='Main Developer' url='https://bemacized.net/' />
+                  <Person icon='/img/avatars/BeMacized.gif' name='BeMacized' role='Main Developer' url='https://bemacized.net/' />
                 </Row>
               </CardBlock>
             </Card>

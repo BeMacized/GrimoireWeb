@@ -149,6 +149,14 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
             </tr>
+            <tr>
+              <UncontrolledTooltip placement='top' target='compFXLander'>Opt-in functionality. Enable for your guild via the Dashboard!</UncontrolledTooltip>
+              <td>Canlander &amp; Auslander Support <a href='#' id='compFXLander'><FontAwesome name='question-circle' /></a></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
             <tr className='categoryRow'>
               <td>Card Pricing <Link to='/reference/pricing'><FontAwesome name='book' /></Link></td>
               <td />

@@ -257,6 +257,8 @@ class PreferencePane extends React.Component {
               <Preference id={11} value={this.state.preferences[11]} onModify={v => this.setPreference(11, v)} />
               <Preference id={12} value={this.state.preferences[12]} onModify={v => this.setPreference(12, v)} />
               <Preference id={21} value={this.state.preferences[21]} onModify={v => this.setPreference(21, v)} />
+              <Preference id={30} value={this.state.preferences[30]} onModify={v => this.setPreference(30, v)} />
+              <Preference id={31} value={this.state.preferences[31]} onModify={v => this.setPreference(31, v)} />
             </List>
           </PaneWrapper>
           <PaneWrapper>
@@ -529,7 +531,7 @@ const preferenceTemplate = [
   {
     'type': 'SWITCH',
     'id': 21,
-    'name': 'Show pricing',
+    'name': 'Show Pricing',
     'default': 0
   },
   {
@@ -588,6 +590,18 @@ const preferenceTemplate = [
     'id': 29,
     'name': 'Prefer Low Quality Images',
     'description': 'Low Quality images load faster on slow connections.',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 30,
+    'name': 'Show Canlander Points',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 31,
+    'name': 'Show Auslander Points',
     'default': 0
   }
 ]
