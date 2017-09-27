@@ -6,7 +6,9 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
@@ -50,7 +52,8 @@
     "shortid": "^2.2.8",
     "styled-components": "^2.1.2",
     "styled-jsx": "^1.0.10",
-    "superagent": "^3.5.2"
+    "superagent": "^3.5.2",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -73,5 +76,6 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2"
-  }
+  },
+  "snyk": true
 }
