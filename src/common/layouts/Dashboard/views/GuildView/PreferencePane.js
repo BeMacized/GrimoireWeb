@@ -381,11 +381,26 @@ const preferenceTemplate = [
     'name': 'Command Prefix',
     'default': 0,
     'options': [
-      ['g! - Default', 'g!'],
-      ['! - Exclamation Mark', '!'],
-      ['_ - Underscore', '_'],
-      ["@Mac's Grimoire - Mention", '@'],
-      ['grim! - Longer', 'grim!']
+      [
+        'g! - Default',
+        'g!'
+      ],
+      [
+        '! - Exclamation Mark',
+        '!'
+      ],
+      [
+        '_ - Underscore',
+        '_'
+      ],
+      [
+        "@Mac's Grimoire - Mention",
+        '@'
+      ],
+      [
+        'grim! - Longer',
+        'grim!'
+      ]
     ]
   },
   {
@@ -422,7 +437,7 @@ const preferenceTemplate = [
     'type': 'SWITCH',
     'id': 6,
     'name': 'Show Converted Mana Cost',
-    'default': 1
+    'default': 0
   },
   {
     'type': 'SWITCH',
@@ -440,26 +455,26 @@ const preferenceTemplate = [
     'type': 'SWITCH',
     'id': 9,
     'name': 'List Legal Formats',
-    'default': 1
+    'default': 0
   },
   {
     'type': 'SWITCH',
     'id': 10,
     'name': 'List Printed Rarities',
-    'default': 1
+    'default': 0
   },
   {
     'type': 'SWITCH',
     'id': 11,
     'name': 'List Printings',
-    'default': 1
+    'default': 0
   },
   {
     'type': 'SWITCH',
     'id': 12,
     'name': 'Show Miscellaneous Properties',
     'description': 'E.g. Loyalty for planeswalkers, modifiers for Vanguard cards, etc.',
-    'default': 1
+    'default': 0
   },
   {
     'type': 'MULTI',
@@ -467,9 +482,18 @@ const preferenceTemplate = [
     'name': 'Title link to Service',
     'default': 0,
     'options': [
-      ['Gatherer (gatherer.wizards.com)', 'GATHERER'],
-      ['Scryfall (scryfall.com)', 'SCRYFALL'],
-      ['MagicCards.Info (magiccards.info)', 'MAGICCARDSINFO']
+      [
+        'Gatherer (gatherer.wizards.com)',
+        'GATHERER'
+      ],
+      [
+        'Scryfall (scryfall.com)',
+        'SCRYFALL'
+      ],
+      [
+        'MagicCards.Info (magiccards.info)',
+        'MAGICCARDSINFO'
+      ]
     ]
   },
   {
@@ -478,11 +502,26 @@ const preferenceTemplate = [
     'name': 'Presentation',
     'default': 0,
     'options': [
-      ['All marketplaces: One printing (Latest default)', 'ALL_MARKETS'],
-      ['Scryfall only: One printing (Latest default)', 'SCRYFALL_ONE'],
-      ['Scryfall only: All printings', 'SCRYFALL_ALL'],
-      ['MTGO: One printing (Latest default)', 'MTGO_ONE'],
-      ['MTGO: All printings (Latest default)', 'MTGO_ALL']
+      [
+        'All marketplaces: One printing (Latest default)',
+        'ALL_MARKETS'
+      ],
+      [
+        'Scryfall only: One printing (Latest default)',
+        'SCRYFALL_ONE'
+      ],
+      [
+        'Scryfall only: All printings',
+        'SCRYFALL_ALL'
+      ],
+      [
+        'MTGO: One printing (Latest default)',
+        'MTGO_ONE'
+      ],
+      [
+        'MTGO: All printings (Latest default)',
+        'MTGO_ALL'
+      ]
     ]
   },
   {
@@ -491,11 +530,26 @@ const preferenceTemplate = [
     'name': 'Currency',
     'default': 0,
     'options': [
-      ['Marketplace Specific', 'DEFAULT'],
-      ['Force USD ($) (Convert)', 'USD'],
-      ['Force EUR (€) (Convert)', 'EUR'],
-      ['Force JPY (¥) (Convert)', 'JPY'],
-      ['Force GBP (£) (Convert)', 'GBP']
+      [
+        'Marketplace Specific',
+        'DEFAULT'
+      ],
+      [
+        'Force USD ($) (Convert)',
+        'USD'
+      ],
+      [
+        'Force EUR (€) (Convert)',
+        'EUR'
+      ],
+      [
+        'Force JPY (¥) (Convert)',
+        'JPY'
+      ],
+      [
+        'Force GBP (£) (Convert)',
+        'GBP'
+      ]
     ]
   },
   {
@@ -531,7 +585,7 @@ const preferenceTemplate = [
   {
     'type': 'SWITCH',
     'id': 21,
-    'name': 'Show Pricing',
+    'name': 'Show Pricing Below Card',
     'default': 0
   },
   {
@@ -546,17 +600,50 @@ const preferenceTemplate = [
     'name': 'Preferred Language (For Card Lookups)',
     'default': 0,
     'options': [
-      ['English', 'English'],
-      ['Chinese Simplified', 'Chinese Simplified'],
-      ['Chinese Traditional', 'Chinese Traditional'],
-      ['French', 'French'],
-      ['German', 'German'],
-      ['Italian', 'Italian'],
-      ['Japanese', 'Japanese'],
-      ['Korean', 'Korean'],
-      ['Portuguese (Brazil)', 'Portuguese (Brazil)'],
-      ['Russian', 'Russian'],
-      ['Spanish', 'Spanish']
+      [
+        'English',
+        'English'
+      ],
+      [
+        'Chinese Simplified',
+        'Chinese Simplified'
+      ],
+      [
+        'Chinese Traditional',
+        'Chinese Traditional'
+      ],
+      [
+        'French',
+        'French'
+      ],
+      [
+        'German',
+        'German'
+      ],
+      [
+        'Italian',
+        'Italian'
+      ],
+      [
+        'Japanese',
+        'Japanese'
+      ],
+      [
+        'Korean',
+        'Korean'
+      ],
+      [
+        'Portuguese (Brazil)',
+        'Portuguese (Brazil)'
+      ],
+      [
+        'Russian',
+        'Russian'
+      ],
+      [
+        'Spanish',
+        'Spanish'
+      ]
     ]
   },
   {
@@ -575,7 +662,7 @@ const preferenceTemplate = [
     'type': 'SWITCH',
     'id': 27,
     'name': 'Disable Card Image Verification',
-    'description': 'By default, Grimoire verifies every card image\'s validity before sending it.',
+    'description': 'By default, Grimoire verifies every card image"s validity before sending it.',
     'default': 0
   },
   {
