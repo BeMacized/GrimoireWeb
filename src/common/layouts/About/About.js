@@ -167,7 +167,7 @@ class About extends React.Component {
                   <br />
                 </ul>
                 <CardText>
-                  The monthly running cost of Grimoire is €3.61, which is currently paid out of my own pocket. If you are hoster who is willing to help out on the hosting side of things, any help is greatly appreciated.
+                  The monthly running cost of Grimoire is €3.61.
                 </CardText>
               </CardBlock>
             </Card>
