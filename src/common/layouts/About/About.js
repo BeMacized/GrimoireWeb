@@ -78,9 +78,9 @@ class About extends React.Component {
             <p>
                 Mac's Grimoire is a chat bot for <a href='https://discordapp.com/'>Discord</a> servers.
                 When added to a server, it provides its members with several tools related to the trading card game <a href='https://magic.wizards.com/'>"Magic The Gathering"</a> by <a href='https://wizards.com/'>Wizards of the Coast</a>.
-                Grimoire was initially made for private use at a specific Discord server: "Magic & Chill". Grimoire is still partnered with this Server.
+                Grimoire was initially made for private use at a specific Discord server: "Magic & Chill". Grimoire is still partnered with this server.
                 If you're interested in joining us over there, feel free to join via <a href='https://discord.gg/vqsFzgJ'>this link</a>.
-                Currently, Grimoire is being developed by a single Developer, <a href='https://bemacized.net/'>@BeMacized</a>, in his spare time.
+                Currently, Grimoire is being developed by a single developer, <a href='https://bemacized.net/'>@BeMacized</a>, in his spare time.
               <br />
               <br />
                 Grimoire has been heavily inspired by other MTG Discord bots, such as <a href='https://github.com/bra1n/judgebot'>JudgeBot</a>, <a href='https://scryfall.com/bots'>The Scryfall Bot</a> and <a href='https://github.com/MagicTheGathering/mtg-discord-bot'>MagicTheGathering.io's Bot</a>
@@ -137,7 +137,7 @@ class About extends React.Component {
               <CardBlock>
                 <CardTitle><FontAwesome name='code' /> Development</CardTitle>
                 <CardText>
-                Development contributions are very much appreciated. If you think you have a cool feature you can add to Grimoire, or have a bugfix you would like to submit, feel free to submit a pull request at one of the git repositories below:
+                Development contributions are very much appreciated. If you think you have a cool feature you can add to Grimoire, or have a bugfix you would like to submit, feel free to submit a pull request to one of the git repositories below:
                 </CardText>
                 <ul>
                   <li><a href={GITHUB_MAIN_REPO}>Grimoire Main Repository</a></li>
