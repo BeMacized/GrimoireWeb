@@ -128,7 +128,7 @@ class Overview extends React.Component {
             <TextBlock>
             Grimoire can fetch general <b>card information</b> in a useful condensed format.<br />
             Card symbol emoji work <b>right out of the box</b>!<br />
-            You can get more specific information by utilizing commands such as <b><Link to='/reference/oracle'>!oracle</Link></b>, <b><Link to='/reference/legality'>!legality</Link></b>, <b><Link to='/reference/prints'>!prints</Link></b> or <b><Link to='/reference/standard'>!rulings</Link></b>.<br />
+            You can get more specific information by utilizing commands such as <b><Link to='/reference/oracle'>g!oracle</Link></b>, <b><Link to='/reference/legality'>g!legality</Link></b>, <b><Link to='/reference/prints'>g!prints</Link></b> or <b><Link to='/reference/standard'>g!rulings</Link></b>.<br />
             Most commands support the entire <b><a href='https://scryfall.com/docs/reference'>Scryfall Syntax</a></b> for finding the right card!
             </TextBlock>
             <H3Gradient>Art Fetching</H3Gradient>
@@ -173,10 +173,10 @@ class Overview extends React.Component {
               <H3Gradient>What were the rules again?</H3Gradient>
               <TextBlock>
             Grimoire can assist with various <b>game rules</b>.
-            There is built-in access to the official:<ul><li><b>Comprehensive Rules</b></li><li><b>Tournament Rules</b></li><li><b>Infraction Procedure Guide</b></li></ul>
+            There is built-in access to the official<ul><li><b>Comprehensive Rules</b></li><li><b>Tournament Rules</b></li><li><b>Infraction Procedure Guide</b></li></ul>
              as well as <b>definitions</b> for every <b>keyword</b>, <b>format</b> and more!
               </TextBlock>
-              <H3Gradient>Uhm.. did you mean?</H3Gradient>
+              <H3Gradient>Uhm... did you mean this?</H3Gradient>
               <TextBlock>
                 In case you don't know exactly what you're looking for, Grimoire can help you out. All rules are browsable and Grimoire will automatically pick the closest match for any card you query. The <b><a href='https://scryfall.com/docs/reference'>Scryfall Syntax</a></b> can always help you out as well!
               </TextBlock>
@@ -194,10 +194,10 @@ class Overview extends React.Component {
               <TextBlock>
                 Do you use Non-English Magic cards a lot? You'll be glad to know that Grimoire fully supports <b>Non-English</b> cards:
                 <ul>
-                  <li><b>!oracle</b> and <b>!card</b> will show the Non-English card text if available</li>
+                  <li><b>g!oracle</b> and <b>g!card</b> will show the Non-English card text if available</li>
                   <li>Every command supports Non-English input for card names</li>
-                  <li><b><Link to='/reference/art'>!art</Link></b> will show Non-English card art if available</li>
-                  <li>Use <b>!names</b> to find out about all other prints of a card from other countries</li>
+                  <li><b><Link to='/reference/art'>g!art</Link></b> will show Non-English card art if available</li>
+                  <li>Use <b>g!names</b> to find out about all other prints of a card from other countries</li>
                 </ul>
               </TextBlock>
             </Col>
@@ -211,7 +211,7 @@ class Overview extends React.Component {
               <H3Gradient>Fully Configurable</H3Gradient>
               <TextBlock>
                 Grimoire can be fully configured via the <Link to='/dashboard'>Dashboard</Link>.<br />
-                Here you can configure many options for your Discord server, including, but not limited to:<br />
+                Here you can configure many options for your Discord server, such as:<br />
                 <ul>
                   <li>The card properties to show</li>
                   <li>The command prefix to respond to </li>
@@ -230,7 +230,7 @@ class Overview extends React.Component {
               </ImageWrapperWhite>
               <H3Gradient>Find any token!</H3Gradient>
               <TextBlock>
-          You can easily pull art for tokens using the <b><Link to='/reference/token'>!token</Link></b> command.<br />
+          You can easily pull art for tokens using the <b><Link to='/reference/token'>g!token</Link></b> command.<br />
           As tokens with the same name can differ, Grimoire allows you to pull up the <b>exact</b> token you were looking for.
               </TextBlock>
             </Col>
@@ -240,7 +240,7 @@ class Overview extends React.Component {
               </ImageWrapperGrey>
               <H3Gradient>Is it banned?</H3Gradient>
               <TextBlock>
-                You can quickly pull up the relevant ban list for any format using the <b><Link to='/reference/banlist'>!banlist</Link></b> command.<br />
+                You can quickly pull up the relevant ban list for any format using the <b><Link to='/reference/banlist'>g!banlist</Link></b> command.<br />
               </TextBlock>
             </Col>
             <Col md={4} sm={12} xs={12}>
@@ -262,7 +262,7 @@ class Overview extends React.Component {
               </ImageWrapperWhite>
               <H3Gradient>Game Store Locator</H3Gradient>
               <TextBlock>
-          You can easily find game stores and events in your area using the <b><Link to='/reference/locator'>!locator</Link></b> command.<br />
+          You can easily find game stores and events in your area using the <b><Link to='/reference/locator'>g!locator</Link></b> command.<br />
           Results are pulled directly from the <a href='http://locator.wizards.com/'>Wizards Locator</a>, and are presented using a useful map!
               </TextBlock>
             </Col>
@@ -272,11 +272,9 @@ class Overview extends React.Component {
               </ImageWrapperGrey>
               <H3Gradient>Random Cards</H3Gradient>
               <TextBlock>
-              Pull up a random card based on any property using the <b><Link to='/reference/random'>!random</Link></b> command.<br /><br />
-              For example, want to pull a random mythic legendary creature from the latest commander set?<br />
-                <span style={{width: '100%', textAlign: 'center', display: 'block', margin: 'none', padding: 'none'}}><code>!random C17 mythic legendary creature</code></span>
-              will do the trick!<br />
-              You can base your search on types, subtypes, supertypes, rarities, sets and more!
+              Pull up a random card based on any property using the <b><Link to='/reference/random'>g!random</Link></b> command.<br /><br />
+              For example, want to pull a random mythic legendary creature from the latest commander set? <code>g!random C17 mythic legendary creature</code> will do the trick!<br />
+              You can base your search on types, subtypes, supertypes, rarities, sets and so forth.
               </TextBlock>
             </Col>
           </Row>

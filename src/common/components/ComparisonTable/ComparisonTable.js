@@ -330,7 +330,7 @@ class ComparisonTable extends React.Component {
             </tr>
           </tfoot>
         </Table>
-        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-24. </b>If any of this data is incorrect please notify the Developer.</p>
+        <p style={{textAlign: 'center'}}><b>Last checked: 2017-08-24. </b>If you believe any of this data is incorrect, please notify the <Link to="/about">developer</Link>.</p>
       </div>
     )
   }

@@ -20,7 +20,7 @@ const BottomBar = styled.div`
 
 const Disclaimer = styled.p`
     display: inline-block;
-    max-width: 765px;
+    max-width: 1080px;
     color: #666;
     font-size: 0.75em;
     padding: 0;
@@ -37,7 +37,7 @@ export default class Footer extends React.Component {
             <br />
             Card prices represent daily averages and/or market values provided by our affiliates. Absolutely no guarantee is made for any price information. See stores for final prices and availability.
             <br />
-            The Discord logo and Discord API are copyright Discord, Grimoire is not created by, affiliated with, or supported by Discord.
+            "Discord", "Discord App", and any associated logos are registered trademarks of Discord, inc. Grimoire is not created by, affiliated with, or supported by Discord.
             <br />
             The Scryfall logo and Scryfall API are copyright Some Assembly, LLC, DBA Scryfall. Grimoire is not created by, affiliated with, or supported by Scryfall.
           </Disclaimer>

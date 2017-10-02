@@ -198,7 +198,7 @@ const commands = [
   {
     'aliases': [],
     'examples': [],
-    'description': 'Shows the help text, containing all of the command references.',
+    'description': 'Show the help text, containing all of the command references.',
     'command': ['help']
   },
   {
@@ -214,7 +214,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the oracle text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve the oracle text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'oracle <query|set>',
       'oracle <query>'
@@ -230,7 +230,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the current pricing for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve the current pricing for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'pricing <query|set>',
       'pricing <query>'
@@ -253,7 +253,7 @@ const commands = [
   {
     'aliases': ['reloadprefs'],
     'examples': [],
-    'description': 'Reload preferences immediately for your guild',
+    'description': 'Reload your guild preferences immediately.',
     'command': ['reloadpreferences']
   },
   {
@@ -267,7 +267,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves all known foreign names for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve all known foreign names for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'names <query|set>',
       'names <query>'
@@ -283,7 +283,7 @@ const commands = [
       'prowess',
       'enchant'
     ],
-    'description': 'Looks up the definition for the specified keyword',
+    'description': 'Look up the definition for the specified keyword.',
     'command': ['define <keyword>']
   },
   {
@@ -293,7 +293,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the flavor text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve the flavor text of a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'flavor <query|set>',
       'flavor <query>'
@@ -312,7 +312,7 @@ const commands = [
       '7',
       ''
     ],
-    'description': 'Retrieve a paragraph from the comprehensive rules',
+    'description': 'Retrieve a paragraph from the comprehensive rules.',
     'command': ['comprules <paragraph nr>']
   },
   {
@@ -321,7 +321,7 @@ const commands = [
       'whatsinstandard'
     ],
     'examples': [],
-    'description': 'See what sets are currently in standard rotation',
+    'description': 'See what sets are currently in standard rotation.',
     'command': ['standard']
   },
   {
@@ -349,7 +349,7 @@ const commands = [
       'Mighty Leap',
       'Mighty Leap | Magic Origins'
     ],
-    'description': 'Retrieves all sets that a card was printed in.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve all sets that a card was printed in.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'prints <query|set>',
       'prints <query>'
@@ -361,7 +361,7 @@ const commands = [
       'Magic Origins',
       'ORI'
     ],
-    'description': 'Fetch information for a set',
+    'description': 'Fetch information for a set.',
     'command': ['set <set>']
   },
   {
@@ -374,7 +374,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Retrieves the current rulings of the specified card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Retrieve the current rulings of the specified card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'rulings <query|set>',
       'rulings <query>'
@@ -393,7 +393,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Checks the legality of a card, for every known format<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Check the legality of a card for every known format.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'legality <query|set>',
       'legality <query>'
@@ -410,7 +410,7 @@ const commands = [
       '3',
       '3.10'
     ],
-    'description': 'Retrieve a paragraph from the tournament rules',
+    'description': 'Retrieve a paragraph from the tournament rules.',
     'command': ['tournamentrules <paragraph nr>']
   },
   {
@@ -420,7 +420,7 @@ const commands = [
       'Mighty Leap | Magic Origins',
       'Mighty Leap'
     ],
-    'description': 'Fetch information for a card<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
+    'description': 'Fetch information for a card.<br/><br/>This command supports the entire <a href="https://scryfall.com/docs/reference">Scryfall Syntax</a> for the query parameter.',
     'command': [
       'card <query|set>',
       'card <query>'
@@ -433,7 +433,7 @@ const commands = [
       'legacy',
       'commander'
     ],
-    'description': 'Retrieve the banlist for a specific format',
+    'description': 'Retrieve the banlist for a specific format.',
     'command': [
       'banlist <standard | modern | legacy | vintage | commander | future | pauper | frontier | penny | 1v1 | duel>'
     ]
@@ -444,7 +444,7 @@ const commands = [
       'Sydney',
       '1027 Newport Avenue Pawtucket, RI 02862'
     ],
-    'description': 'Search for game stores on the Wizards Locator',
+    'description': 'Search for game stores on the Wizards Locator.',
     'command': [
       'locator <location>'
     ]
