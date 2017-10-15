@@ -253,6 +253,7 @@ class PreferencePane extends React.Component {
               <Preference id={7} value={this.state.preferences[7]} onModify={v => this.setPreference(7, v)} />
               <Preference id={8} value={this.state.preferences[8]} onModify={v => this.setPreference(8, v)} />
               <Preference id={9} value={this.state.preferences[9]} onModify={v => this.setPreference(9, v)} />
+              <Preference id={32} value={this.state.preferences[32]} onModify={v => this.setPreference(32, v)} />
               <Preference id={10} value={this.state.preferences[10]} onModify={v => this.setPreference(10, v)} />
               <Preference id={11} value={this.state.preferences[11]} onModify={v => this.setPreference(11, v)} />
               <Preference id={12} value={this.state.preferences[12]} onModify={v => this.setPreference(12, v)} />
@@ -689,6 +690,12 @@ const preferenceTemplate = [
     'type': 'SWITCH',
     'id': 31,
     'name': 'Show Auslander Points',
+    'default': 0
+  },
+  {
+    'type': 'SWITCH',
+    'id': 32,
+    'name': 'Show Color Identity',
     'default': 0
   }
 ]
