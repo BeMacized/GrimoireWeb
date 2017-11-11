@@ -109,6 +109,13 @@ class ComparisonTable extends React.Component {
               <td><NotSupportedIcon /></td>
             </tr>
             <tr>
+              <td>Wizards Locator Lookups <Link to='/reference/locator'><FontAwesome name='book' /></Link></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+              <td><SupportedIcon /></td>
+              <td><NotSupportedIcon /></td>
+            </tr>
+            <tr>
               <td>Scryfall Syntax Support <a href='https://scryfall.com/docs/reference'><FontAwesome name='book' /></a></td>
               <td><SupportedIcon /></td>
               <td>
@@ -137,13 +144,6 @@ class ComparisonTable extends React.Component {
             </tr>
             <tr>
               <td>Supports Non-English Card Names, Text &amp; Art</td>
-              <td><SupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-              <td><NotSupportedIcon /></td>
-            </tr>
-            <tr>
-              <td>Wizards Locator Lookups <Link to='/reference/locator'><FontAwesome name='book' /></Link></td>
               <td><SupportedIcon /></td>
               <td><NotSupportedIcon /></td>
               <td><NotSupportedIcon /></td>
