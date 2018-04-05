@@ -157,17 +157,10 @@ class About extends React.Component {
                 <CardTitle><FontAwesome name='heart' /> Donate</CardTitle>
                 <CardText>
                     Any donations for this project are spent on funding the monthly recurring server costs first, with development coffee coming in second. <br />
-                    If you would like to support this project via a donation, I accept donations via <a href='https://paypal.me/BeMacized'>PayPal</a>.<br />
-                    In case cryptocurrency is your preferred flavour, that's fine too:
+                    If you would like to support this project via a donation, I accept donations via <a href='https://paypal.me/BeMacized'>PayPal</a>.
                 </CardText>
-                <ul>
-                  <li>Bitcoin (BTC): <code>16WKroiHKRR97x4vX7TAezvzZeisvQ21Fj</code></li>
-                  <li>Ethereum (ETH): <code>0xb5ffd8b77df0431e7b03533cefd411c08a70a1e3</code></li>
-                  <li>Litecoin (LTC): <code>Lf3TX1R5U7XTv5ERPypm5HcK4m3V2BLFfh</code></li>
-                  <br />
-                </ul>
                 <CardText>
-                  The monthly running cost of Grimoire is €3.61.
+                  The monthly running cost of Grimoire is €8.34.
                 </CardText>
               </CardBlock>
             </Card>
