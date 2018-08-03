@@ -33,7 +33,7 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-css-transition-replace": "^2.2.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.0.1",
     "react-favicon": "^0.0.9",
     "react-fontawesome": "^1.6.1",
     "react-redirect": "^1.0.0",
