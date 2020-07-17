@@ -46,7 +46,7 @@
     "reactstrap": "^4.8.0",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "request-promise-native": "^1.0.4",
     "serialize-javascript": "^1.4.0",
     "shortid": "^2.2.8",
