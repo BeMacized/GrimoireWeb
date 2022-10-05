@@ -7,13 +7,13 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
     "body-parser": "^1.17.2",
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "4.0.0",
     "classnames": "^2.2.5",
     "connect-redis": "^3.3.0",
     "express": "^4.15.4",
@@ -46,14 +46,14 @@
     "reactstrap": "^4.8.0",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "request-promise-native": "^1.0.4",
     "serialize-javascript": "^1.4.0",
     "shortid": "^2.2.8",
     "styled-components": "^2.1.2",
     "styled-jsx": "^1.0.10",
     "superagent": "^3.5.2",
-    "snyk": "^1.41.1"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
