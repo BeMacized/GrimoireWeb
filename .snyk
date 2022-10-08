@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -10,3 +10,17 @@ patch:
         patched: '2017-09-27T06:39:58.031Z'
     - razzle > webpack-dev-server > compression > debug:
         patched: '2017-09-27T05:28:41.102Z'
+  'npm:extend:20180424':
+    - request > extend:
+        patched: '2022-10-08T14:10:28.513Z'
+  SNYK-JS-LODASH-567746:
+    - request-promise-native > request-promise-core > lodash:
+        patched: '2022-10-08T14:10:28.513Z'
+  'npm:stringstream:20180511':
+    - request > stringstream:
+        patched: '2022-10-08T14:10:28.513Z'
+  'npm:tough-cookie:20170905':
+    - request > tough-cookie:
+        patched: '2022-10-08T14:10:28.513Z'
+    - request-promise-native > tough-cookie:
+        patched: '2022-10-08T14:10:28.513Z'
